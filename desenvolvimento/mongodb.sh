@@ -7,3 +7,8 @@ echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb
 sudo apt-get update 
 
 sudo apt-get install -y mongodb-org
+
+sudo mkdir /data/db
+sudo mkdir /data
+sudo mkdir /data/db
+sudo chmod 777 /data/db -R
