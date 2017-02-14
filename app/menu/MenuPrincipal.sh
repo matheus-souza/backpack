@@ -1,5 +1,11 @@
 #!/bin/bash
 
+senha=0
+usuario=0
+
+var=$(cat .senha.txt)
+rm .senha.txt
+
 itemSelecionado=$(whiptail --title "Menu Facius" --menu "Selecione uma das opções" 20 78 7 \
 	"1" "Atualizar lista de repositórios e atualizar programas" \
 	"2" "Pacote básico" \
