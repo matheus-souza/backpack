@@ -1,7 +1,13 @@
 #!/bin/bash
 
-sudo apt-get install npm
-sudo apt-get install nodejs-legacy
+#CHAMAR NODEJS INSTALL
+
 sudo npm install admin-mongo
-mv node_modules/admin-mongo/ ./adminMongo
+
+sudo mv node_modules/admin-mongo/ ./adminMongo
+
+cd /home/matheush/adminMongo
+
+sudo apt-get install nodejs-legacy
+
 sudo npm install
