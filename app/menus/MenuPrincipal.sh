@@ -13,7 +13,7 @@ echo $senha
 usuario=$(cat \./\.tmp/\.usuario)
 echo $usuario
 
-itemSelecionado=$(whiptail --title "Menu Facius" --menu "Selecione uma das opções" 20 78 7 \
+itemSelecionado=$(whiptail --title "Menu scripts-ubuntu" --menu "Selecione uma das opções" 20 78 7 \
 	"1" "Atualizar lista de repositórios e atualizar programas" \
 	"2" "Pacote básico" \
 	"3" "Pacote de desenvolvedor" \
