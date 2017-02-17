@@ -3,8 +3,15 @@
 senha=0
 usuario=0
 
-var=$(cat .senha.txt)
-rm .senha.txt
+#direto=0
+#direto=$(pwd)
+#echo $direto
+
+senha=$(cat \./\.tmp/\.senha)
+echo $senha
+
+usuario=$(cat \./\.tmp/\.usuario)
+echo $usuario
 
 itemSelecionado=$(whiptail --title "Menu Facius" --menu "Selecione uma das opções" 20 78 7 \
 	"1" "Atualizar lista de repositórios e atualizar programas" \

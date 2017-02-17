@@ -12,6 +12,6 @@ MenuPrincipal() {
 }
 
 echo $senha > ./.tmp/.senha
-echo $usuario >> ./.tmp/.usuario
+echo $usuario > ./.tmp/.usuario
 
 MenuPrincipal
