@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#CHAMAR JAVA INSTALL
+
 sudo apt-add-repository ppa:paolorotolo/android-studio -y
 
 sudo apt-get update -y

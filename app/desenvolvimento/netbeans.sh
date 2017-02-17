@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#CHAMAR JAVA INSTALL
+
 wget http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-linux.sh -O /home/matheush/Downloads/netbeans-8.2-linux.sh
 
 sudo mkdir /opt/NetBeans
