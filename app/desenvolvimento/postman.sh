@@ -1,36 +1,28 @@
 #!/bin/bash
 
-wget https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz -O /home/matheush/Downloads/Franz-linux-x64-4.0.4.tgz
+wget https://dl.pstmn.io/download/latest/linux64 -O /home/matheush/Downloads/Postman.tar.gz
 
 cd /home/matheush/Downloads
 
-mkdir ./Franz
+sudo tar xvzf ./Postman.tar.gz -C ./
 
-sudo tar xvzf ./Franz-linux-x64-4.0.4.tgz -C ./Franz/
+sudo mv ./Postman /opt/
 
-sudo mv ./Franz /opt/
-
-sudo touch /usr/share/applications/franz.desktop
+sudo touch /usr/share/applications/postman.desktop
  
-sudo chmod 666 /usr/share/applications/franz.desktop
+sudo chmod 666 /usr/share/applications/postman.desktop
  
-sudo echo "[Desktop Entry]" > /usr/share/applications/franz.desktop
-sudo echo "Version=1.0" >> /usr/share/applications/franz.desktop
-sudo echo "Type=Application" >> /usr/share/applications/franz.desktop
-sudo echo "Terminal=false" >> /usr/share/applications/franz.desktop
-sudo echo "Name=Franz" >> /usr/share/applications/franz.desktop
-sudo echo "Exec=/opt/Franz/Franz" >> /usr/share/applications/franz.desktop
-sudo echo "Icon=/opt/Franz/franz.png" >> /usr/share/applications/franz.desktop
-sudo echo "Categories=Application;" >> /usr/share/applications/franz.desktop
+sudo echo "[Desktop Entry]" > /usr/share/applications/postman.desktop
+sudo echo "Version=1.0" >> /usr/share/applications/postman.desktop
+sudo echo "Type=Application" >> /usr/share/applications/postman.desktop
+sudo echo "Terminal=false" >> /usr/share/applications/postman.desktop
+sudo echo "Name=postman" >> /usr/share/applications/postman.desktop
+sudo echo "Exec=/opt/Postman/Postman" >> /usr/share/applications/postman.desktop
+sudo echo "Icon=/opt/Postman/postman.png" >> /usr/share/applications/postman.desktop
+sudo echo "Categories=Application;" >> /usr/share/applications/postman.desktop
  
-sudo chmod 644 /usr/share/applications/franz.desktop
+sudo chmod 644 /usr/share/applications/postman.desktop
  
-wget https://www.dropbox.com/s/bfc4a0x8ebvpiai/franz.png?dl=0 -O ~/Downloads/franz.png
+wget https://www.dropbox.com/s/q1aycrntwlmv4w8/postman.png?dl=0 -O ~/Downloads/postman.png
  
-sudo mv /home/matheush/Downloads/franz.png /opt/Franz/
-
-
-
-
-
-wget https://dl.pstmn.io/download/latest/linux64 
+sudo mv /home/matheush/Downloads/postman.png /opt/Postman/
