@@ -17,9 +17,9 @@ MenuAtualizador() {
 	./app/complementares/atualiza.sh
 }
 
-#MenuLimpaSistema() {
-	#CHAMA LIMPA SISEMA
-#}
+MenuLimpaSistema() {
+	./app/complementares/limpeza.sh
+}
 
 MenuBasico() {
 	./app/menus/MenuBasico.sh
@@ -36,15 +36,17 @@ MenuAdicionais() {
 
 itemSelecionado=$(whiptail --title "Menu scripts-ubuntu" --menu "Selecione uma das opções" 20 78 7 \
 	"1" "Atualizar lista de repositórios e atualizar programas" \
-	"2" "" \
-	"3" "Pacote básico" \
-	"4" "" \
-	"5" "Pacote Adicionais" 3>&1 1>&2 2>&3)
+	"2" "Limpar lixos do sistema" \
+	"3" "Resetar interface gráfica" \
+	"4" "Pacote básico" \
+	"5" "Pacote desenvolvedor" \
+	"6" "Pacote adicionais" 3>&1 1>&2 2>&3)
 	
 case $itemSelecionado in
 	1) MenuAtualizador ;;
-	2) MenuLimpaSistema ;;
-	3) MenuBasico ;;
-	4) MenuDesenvolvedor ;;
-	5) MenuAdicionais ;;
+	2) ResetarUnity ;;
+	3) MenuLimpaSistema ;;
+	4) MenuBasico ;;
+	5) MenuDesenvolvedor ;;
+	6) MenuAdicionais ;;
 esac
