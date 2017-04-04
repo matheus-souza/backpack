@@ -3,9 +3,9 @@
 senha=0
 usuario=0
 
-direto=0
-direto=$(pwd)
-echo $direto
+#direto=0
+#direto=$(pwd)
+#echo $direto
 
 senha=$(cat \./\.tmp/\.senha)
 #echo $senha
@@ -15,6 +15,10 @@ usuario=$(cat \./\.tmp/\.usuario)
 
 MenuAtualizador() {
 	./app/complementares/atualiza.sh
+}
+
+MenuReseteUnity() {
+	./app/complementares/reseteUnity.sh
 }
 
 MenuLimpaSistema() {
@@ -44,7 +48,7 @@ itemSelecionado=$(whiptail --title "Menu scripts-ubuntu" --menu "Selecione uma d
 	
 case $itemSelecionado in
 	1) MenuAtualizador ;;
-	2) ResetarUnity ;;
+	2) ReseteUnity ;;
 	3) MenuLimpaSistema ;;
 	4) MenuBasico ;;
 	5) MenuDesenvolvedor ;;
