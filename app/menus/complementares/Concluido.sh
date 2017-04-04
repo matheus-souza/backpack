@@ -1,7 +1,7 @@
 #!/bin/bash
 
 MenuPrincipal() {
-	../menus/MenuPrincipal.sh
+	./app/menus/MenuPrincipal.sh
 }
 
 Concluido(){

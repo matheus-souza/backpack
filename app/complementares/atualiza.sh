@@ -1,10 +1,14 @@
 #!/bin/bash
 
-Concluido() {
-	../menus/complementares/Concluido.sh
+MenuConcluido() {
+	./app/menus/complementares/Concluido.sh
 }
 
 sudo apt update
 sudo apt upgrade -y
 
-Concluido
+direto=0
+direto=$(pwd)
+echo $direto
+
+MenuConcluido
