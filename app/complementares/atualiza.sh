@@ -7,8 +7,4 @@ MenuConcluido() {
 sudo apt update
 sudo apt upgrade -y
 
-direto=0
-direto=$(pwd)
-echo $direto
-
 MenuConcluido
