@@ -1,10 +1,14 @@
 #!/bin/bash
 
+usuario=0
+
+usuario=$(cat \./\.tmp/\.usuario)
+
 MenuConcluido() {
 	./app/menus/complementares/Concluido.sh
 }
 
-sudo rm -rf /home/matheush/.local/share/Trash/files/*
+sudo rm -rf /home/$usuario/.local/share/Trash/files/*
 
 sudo rm -rf /var/tmp/*
 
