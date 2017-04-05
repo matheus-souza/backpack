@@ -1,8 +1,12 @@
 #!/bin/bash
 
-wget https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz -O /home/matheush/Downloads/Franz-linux-x64-4.0.4.tgz
+usuario=0
 
-cd /home/matheush/Downloads
+usuario=$(cat \./\.tmp/\.usuario)
+
+wget https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz -O /home/$usuario/Downloads/Franz-linux-x64-4.0.4.tgz
+
+cd /home/$usuario/Downloads
 
 mkdir ./Franz
 
@@ -25,6 +29,6 @@ sudo echo "Categories=Application;" >> /usr/share/applications/franz.desktop
  
 sudo chmod 644 /usr/share/applications/franz.desktop
  
-wget https://www.dropbox.com/s/bfc4a0x8ebvpiai/franz.png?dl=0 -O ~/Downloads/franz.png
+wget https://www.dropbox.com/s/bfc4a0x8ebvpiai/franz.png?dl=0 -O /home/$usuario/Downloads/franz.png
  
-sudo mv /home/matheush/Downloads/franz.png /opt/Franz/
+sudo mv /home/$usuario/Downloads/franz.png /opt/Franz/
