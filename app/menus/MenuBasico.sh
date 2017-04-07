@@ -3,17 +3,36 @@
 senha=0
 usuario=0
 
-#Gimp() {}
+senha=$(cat \./\.tmp/\.senha)
+usuario=$(cat \./\.tmp/\.usuario)
 
-#Gksu() {}
+MenuConcluidoBasico() {
+	./app/menus/complementares/ConcluidoBasico.sh
+}
 
-#Inkscape() {}
+Gimp() {
+	echo -e "$senha\n" | sudo -S ./app/basicos/gimp.sh
+}
 
-#RarUnrar() {}
+Gksu() {
+	echo -e "$senha\n" | sudo -S ./app/basicos/gksu.sh
+}
 
-#RestrictedExtras() {}
+Inkscape() {
+	echo -e "$senha\n" | sudo -S ./app/basicos/inkscape.sh
+}
 
-#UnityTweakTool() {}
+RarUnrar() {
+	echo -e "$senha\n" | sudo -S ./app/basicos/rarunrar.sh
+}
+
+RestrictedExtras() {
+	echo -e "$senha\n" | sudo -S ./app/basicos/restricted-extras.sh
+}
+
+UnityTweakTool() {
+	echo -e "$senha\n" | sudo -S ./app/basicos/unity-tweak-tool.sh
+}
 
 MenuBasico() {
 	escolha=$(whiptail --title "Menu Facius" --menu "Pacote Básico" 20 78 7 \
@@ -87,6 +106,7 @@ EscolherProgramas() {
 	else
 		EmBranco
 	fi
+	MenuConcluidoBasico
 	MenuBasico
 }
 
@@ -101,8 +121,8 @@ Voltar() {
 
 MenuBasico
 
-echo "antes do em branco"
+##echo "antes do em branco"
 
-./app/menus/complementares/EmBranco.sh
+#./app/menus/complementares/EmBranco.sh
 
-echo "passou"
+##echo "passou"
