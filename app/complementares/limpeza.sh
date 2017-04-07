@@ -4,8 +4,8 @@ usuario=0
 
 usuario=$(cat \./\.tmp/\.usuario)
 
-MenuConcluido() {
-	./app/menus/complementares/Concluido.sh
+MenuConcluidoPrincipal() {
+	./app/menus/complementares/ConcluidoPrincipal.sh
 }
 
 sudo rm -rf /home/$usuario/.local/share/Trash/files/*
@@ -20,4 +20,4 @@ sudo apt-get autoclean -y
 
 sudo dpkg --configure -a
 
-MenuConcluido
+MenuConcluidoPrincipal

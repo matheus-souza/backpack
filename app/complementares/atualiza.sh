@@ -1,10 +1,10 @@
 #!/bin/bash
 
-MenuConcluido() {
-	./app/menus/complementares/Concluido.sh
+MenuConcluidoPrincipal() {
+	./app/menus/complementares/ConcluidoPrincipal.sh
 }
 
 sudo apt update
 sudo apt upgrade -y
 
-MenuConcluido
+MenuConcluidoPrincipal

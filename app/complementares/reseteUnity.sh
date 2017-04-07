@@ -1,7 +1,7 @@
 #!/bin/bash
 
-MenuConcluido() {
-	./app/menus/complementares/Concluido.sh
+MenuConcluidoPrincipal() {
+	./app/menus/complementares/ConcluidoPrincipal.sh
 }
 
 dconf reset -f /org/compiz/
@@ -10,4 +10,4 @@ setsid unity
 
 unity --reset-icons
 
-MenuConcluido
+MenuConcluidoPrincipal
