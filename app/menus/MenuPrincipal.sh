@@ -48,8 +48,8 @@ itemSelecionado=$(whiptail --title "Menu scripts-ubuntu" --menu "Selecione uma d
 	
 case $itemSelecionado in
 	1) MenuAtualizador ;;
-	2) ReseteUnity ;;
-	3) MenuLimpaSistema ;;
+	2) MenuLimpaSistema ;;
+	3) MenuReseteUnity ;;
 	4) MenuBasico ;;
 	5) MenuDesenvolvedor ;;
 	6) MenuAdicionais ;;
