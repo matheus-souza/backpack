@@ -14,7 +14,7 @@ usuario=$(cat \./\.tmp/\.usuario)
 #echo $usuario
 
 MenuAtualizador() {
-	./app/complementares/atualiza.sh
+	echo -e "$senha\n" | sudo -S ./app/complementares/atualiza.sh
 }
 
 MenuReseteUnity() {
@@ -22,7 +22,7 @@ MenuReseteUnity() {
 }
 
 MenuLimpaSistema() {
-	./app/complementares/limpeza.sh
+	echo -e "$senha\n" | sudo -S ./app/complementares/limpeza.sh
 }
 
 MenuBasico() {
