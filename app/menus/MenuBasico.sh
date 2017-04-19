@@ -7,7 +7,7 @@ senha=$(cat \./\.tmp/\.senha)
 usuario=$(cat \./\.tmp/\.usuario)
 
 MenuConcluidoBasico() {
-	./app/menus/complementares/ConcluidoBasico.sh
+	./app/menus/concluidos/ConcluidoBasico.sh
 }
 
 Gimp() {
@@ -105,14 +105,14 @@ EscolherProgramas() {
 		done
 	else
 		EmBranco
+		MenuBasico
 	fi
 	MenuConcluidoBasico
 	MenuBasico
 }
 
 Detalhes() {
-	whiptail --title "Facius" --msgbox "Gimp -> Editor de fotos\nGksu -> Interface gráfica do sudo\nGoogle Chrome -> Navegador\nInkscape -> Editor de imagens vetoriais\nKdenlive -> Editor de Vídeos\nRar -> Descompactador de arquivos\nUbuntu Restricted Extras -> Software essenciais\nTransmageddon -> Decodificador de vídeo" 14 78
-	MenuBasico
+	./app/menus/detalhes/DetalhesBasico.sh
 }
 
 Voltar() {

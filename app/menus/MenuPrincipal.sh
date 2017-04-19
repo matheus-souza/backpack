@@ -41,7 +41,7 @@ MenuAdicionais() {
 itemSelecionado=$(whiptail --title "Menu scripts-ubuntu" --menu "Selecione uma das opções" 20 78 7 \
 	"1" "Atualizar lista de repositórios e atualizar programas" \
 	"2" "Limpar lixos do sistema" \
-	"3" "Resetar interface gráfica" \
+	"3" "Resetar Unity" \
 	"4" "Pacote básico" \
 	"5" "Pacote desenvolvedor" \
 	"6" "Pacote adicionais" 3>&1 1>&2 2>&3)
