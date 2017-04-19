@@ -35,7 +35,7 @@ UnityTweakTool() {
 }
 
 MenuBasico() {
-	escolha=$(whiptail --title "Menu Facius" --menu "Pacote Básico" 20 78 7 \
+	escolha=$(whiptail --title "Menu Básico" --menu "Pacote Básico" 20 78 7 \
 	"1" "Instalar todos os programas" \
 	"2" "Escolher o que instalar" \
 	"3" "O que contém no pacote" \
