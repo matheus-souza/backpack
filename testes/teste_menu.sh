@@ -8,7 +8,7 @@ TesteFuncao() {
 
 
 EscolheBasico(){
-	checkbasico=$(whiptail --title "Facius" --separate-output --checklist \
+	checkbasico=$(whiptail --title "Backpack" --separate-output --checklist \
 	"Escolha os programas para instalar" 20 78 8 \
 	"teste" "Decodificador de vídeo" OFF 3>&1 1>&2 2>&3)
 

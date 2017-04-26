@@ -63,7 +63,7 @@ InstalaTudo() {
 }
 
 EscolherProgramas() {
-	checkBox=$(whiptail --title "scrips-ubuntu" --separate-output --checklist \
+	checkBox=$(whiptail --title "Backpack" --separate-output --checklist \
 	"Escolha os programas para instalar" 20 78 8 \
 	"Gimp" "Editor de fotos" OFF \
 	"Gksu" "Interface gráfica do sudo" OFF \
