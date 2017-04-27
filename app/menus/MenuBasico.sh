@@ -97,9 +97,3 @@ Voltar() {
 }
 
 MenuBasico
-
-##echo "antes do em branco"
-
-#./app/menus/complementares/EmBranco.sh
-
-##echo "passou"
