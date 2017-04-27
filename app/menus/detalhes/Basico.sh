@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DetalhesBasico() {
+Detalhes() {
 	whiptail --title "Detalhes pacote básico" --msgbox "
 		Gimp -> Editor de fotos
 		Gksu -> Interface gráfica do sudo
@@ -10,4 +10,4 @@ DetalhesBasico() {
 		Unity Tweak Tools -> Utilitario de edição do Unity" 14 78
 }
 
-DetalhesBasico
+Detalhes
