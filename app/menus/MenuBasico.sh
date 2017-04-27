@@ -72,42 +72,19 @@ EscolherProgramas() {
 	"Ubuntu Restricted Extras" "Software essenciais" OFF \
 	"Unity Tweak Tools" "Ferramentas de edição do Unity" OFF 3>&1 1>&2 2>&3)
 
-	statusCheck=$?
-	if [ $statusCheck = 0 ]
-	then
-		echo "$checkBox" | while read LINHA
-		do
-	 		#echo "$LINHA"
-			if [ "$LINHA" = "Gimp" ];
-			then
-				Gimp
-			fi
-			if [ "$LINHA" = "Gksu" ];
-			then
-				Gksu
-			fi
-			if [ "$LINHA" = "Inkscape" ];
-			then
-				Inkscape
-			fi
-			if [ "$LINHA" = "Rar" ];
-			then
-				RarUnrar
-			fi
-			if [ "$LINHA" = "Ubuntu Restricted Extras" ];
-			then
-				RestrictedExtras
-			fi
-			if [ "$LINHA" = "Unity Tweak Tools" ];
-			then
-				UnityTweakTool
-			fi
-		done
-	else
-		EmBranco
-		MenuBasico
-	fi
-	MenuConcluidoBasico
+	echo "$checkBox" | while read item
+	do
+		case $item in
+			"Gimp") Gimp ;;
+			"Gksu") Gksu ;;
+			"Inkscape") Inkscape ;;
+			"Rar") Rar ;;
+			"Ubuntu Restricted Extras") RestrictedExtras ;;
+			"Unity Tweak Tools") UnityTweakTool ;;
+			*) EmBranco;;
+		esac
+		MenuConcluidoBasico
+	done
 	MenuBasico
 }
 
