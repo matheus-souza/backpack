@@ -2,9 +2,11 @@
 
 #CHAMAR JAVA INSTALL
 
-wget http://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/neon/2/eclipse-jee-neon-2-linux-gtk-x86_64.tar.gz -O /home/matheush/Downloads/eclipse-jee-neon-2-linux-gtk-x86_64.tar.gz
+usuario=$(cat \./\.tmp/\.usuario)
 
-cd /home/matheush/Downloads
+wget http://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/neon/2/eclipse-jee-neon-2-linux-gtk-x86_64.tar.gz -O /home/$usuario/Downloads/eclipse-jee-neon-2-linux-gtk-x86_64.tar.gz
+
+cd /home/$usuario/Downloads
 
 sudo tar xvzf ./eclipse-jee-neon-2-linux-gtk-x86_64.tar.gz -C ./
 
