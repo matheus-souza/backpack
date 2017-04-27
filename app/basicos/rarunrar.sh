@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sudo apt-get install rar -y
+sudo apt install rar -y
 
-sudo apt-get install unrar-free -y
+sudo apt install unrar-free -y
