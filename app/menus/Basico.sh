@@ -1,12 +1,9 @@
 #!/bin/bash
 
-senha=0
-usuario=0
-
 senha=$(cat \./\.tmp/\.senha)
 usuario=$(cat \./\.tmp/\.usuario)
 
-MenuConcluidoBasico() {
+Concluido() {
 	./app/menus/complementares/Concluido.sh
 }
 
@@ -34,7 +31,7 @@ UnityTweakTool() {
 	echo -e "$senha\n" | sudo -S ./app/basicos/unity-tweak-tool.sh
 }
 
-MenuBasico() {
+Basico() {
 	escolha=$(whiptail --title "Menu Básico" --menu "Pacote Básico" 20 78 7 \
 	"1" "Instalar todos os programas" \
 	"2" "Escolher o que instalar" \
@@ -81,19 +78,23 @@ EscolherProgramas() {
 			"Rar") Rar ;;
 			"Ubuntu Restricted Extras") RestrictedExtras ;;
 			"Unity Tweak Tools") UnityTweakTool ;;
-			*) EmBranco;;
+			*) EmBranco ;;
 		esac
-		MenuConcluidoBasico
 	done
-	MenuBasico
+
+	if [[ "$checkBox" != "" ]]; then
+		Concluido
+	fi
+	Basico
 }
 
 Detalhes() {
 	./app/menus/detalhes/Basico.sh
+	Basico
 }
 
 Voltar() {
 	./app/menus/Principal.sh
 }
 
-MenuBasico
+Basico
