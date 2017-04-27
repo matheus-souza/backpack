@@ -1,7 +1,7 @@
 #!/bin/bash
 
 MenuConcluidoPrincipal() {
-	./app/menus/concluidos/ConcluidoPrincipal.sh
+	./app/menus/complementares/Concluido.sh
 }
 
 dconf reset -f /org/compiz/

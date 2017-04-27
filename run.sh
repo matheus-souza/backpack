@@ -10,7 +10,7 @@ usuario=$(whiptail --inputbox "Por favor digite seu usuário" 8 78 --title "scri
 senha=$(whiptail --passwordbox "Por favor digite sua senha" 8 78 --title "scripts-ubuntu" 3>&1 1>&2 2>&3)
 
 MenuPrincipal() {
-	./app/menus/MenuPrincipal.sh
+	./app/menus/Principal.sh
 }
 
 echo $senha > ./.tmp/.senha

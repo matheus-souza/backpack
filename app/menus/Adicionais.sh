@@ -7,7 +7,7 @@ senha=$(cat \./\.tmp/\.senha)
 usuario=$(cat \./\.tmp/\.usuario)
 
 MenuConcluidoAdicionais() {
-	./app/menus/concluidos/ConcluidoAdicionais.sh
+	./app/menus/complementares/Concluido.sh
 }
 
 #Franz() {}
@@ -100,11 +100,11 @@ EscolherProgramas() {
 }
 
 Detalhes() {
-	./app/menus/detalhes/DetalhesAdicionais.sh
+	./app/menus/detalhes/Adicionais.sh
 }
 
 Voltar() {
-	./app/menus/MenuPrincipal.sh
+	./app/menus/Principal.sh
 }
 
 MenuAdicionais

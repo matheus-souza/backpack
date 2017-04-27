@@ -1,7 +1,7 @@
 #!/bin/bash
 
 MenuAdicionais() {
-	./app/menus/MenuAdicionais.sh
+	./app/menus/Adicionais.sh
 }
 
 DetalhesAdicionais() {

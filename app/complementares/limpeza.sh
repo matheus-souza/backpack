@@ -3,7 +3,7 @@
 usuario=$(cat \./\.tmp/\.usuario)
 
 MenuConcluidoPrincipal() {
-	./app/menus/concluidos/ConcluidoPrincipal.sh
+	./app/menus/complementares/Concluido.sh
 }
 
 sudo rm -rf /home/$usuario/.local/share/Trash/files/*

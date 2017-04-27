@@ -7,7 +7,7 @@ senha=$(cat \./\.tmp/\.senha)
 usuario=$(cat \./\.tmp/\.usuario)
 
 MenuConcluidoBasico() {
-	./app/menus/concluidos/ConcluidoBasico.sh
+	./app/menus/complementares/Concluido.sh
 }
 
 Gimp() {
@@ -89,11 +89,11 @@ EscolherProgramas() {
 }
 
 Detalhes() {
-	./app/menus/detalhes/DetalhesBasico.sh
+	./app/menus/detalhes/Basico.sh
 }
 
 Voltar() {
-	./app/menus/MenuPrincipal.sh
+	./app/menus/Principal.sh
 }
 
 MenuBasico

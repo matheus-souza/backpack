@@ -26,15 +26,15 @@ MenuLimpaSistema() {
 }
 
 MenuBasico() {
-	./app/menus/MenuBasico.sh
+	./app/menus/Basico.sh
 }
 
 MenuDesenvolvedor() {
-	./app/menus/MenuDesenvolvedor.sh
+	./app/menus/Desenvolvedor.sh
 }
 
 MenuAdicionais() {
-	./app/menus/MenuAdicionais.sh
+	./app/menus/Adicionais.sh
 }
 
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 MenuBasico() {
-	./app/menus/MenuBasico.sh
+	./app/menus/Basico.sh
 }
 
 DetalhesBasico() {
