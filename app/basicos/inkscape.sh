@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt-get install inkscape -y
+sudo apt install inkscape -y
