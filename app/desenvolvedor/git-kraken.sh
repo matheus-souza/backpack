@@ -2,10 +2,12 @@
 
 #CHAMAR GIT INSTALL
 
-wget https://release.gitkraken.com/linux/gitkraken-amd64.deb -O /home/matheush/Downloads/gitkraken-amd64.deb
+usuario=$(cat \./\.tmp/\.usuario)
 
-sudo dpkg -i /home/matheush/Downloads/gitkraken-amd64.deb
+wget https://release.gitkraken.com/linux/gitkraken-amd64.deb -O /home/$usuario/Downloads/gitkraken-amd64.deb
 
-sudo apt-get -f install -y
+sudo dpkg -i /home/$usuario/Downloads/gitkraken-amd64.deb
 
-sudo rm /home/matheush/Downloads/gitkraken-amd64.deb
+sudo apt -f install -y
+
+sudo rm /home/$usuario/Downloads/gitkraken-amd64.deb
