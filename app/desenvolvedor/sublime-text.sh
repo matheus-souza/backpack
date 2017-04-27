@@ -1,9 +1,11 @@
 #!/bin/bash
 
-wget https://download.sublimetext.com/sublime-text_build-3126_amd64.deb -O /home/matheush/Downloads/sublime-text_build-3126_amd64.deb
+usuario=$(cat \./\.tmp/\.usuario)
 
-sudo dpkg -i /home/matheush/Downloads/sublime-text_build-3126_amd64.deb
+wget https://download.sublimetext.com/sublime-text_build-3126_amd64.deb -O /home/$usuario/Downloads/sublime-text_build-3126_amd64.deb
 
-sudo apt-get -f install -y
+sudo dpkg -i /home/$usuario/Downloads/sublime-text_build-3126_amd64.deb
 
-sudo rm /home/matheush/Downloads/sublime-text_build-3126_amd64.deb
+sudo apt -f install -y
+
+sudo rm /home/$usuario/Downloads/sublime-text_build-3126_amd64.deb
