@@ -2,13 +2,15 @@
 
 #CHAMAR JAVA INSTALL
 
-wget http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-linux.sh -O /home/matheush/Downloads/netbeans-8.2-linux.sh
+usuario=$(cat \./\.tmp/\.usuario)
+
+wget http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-linux.sh -O /home/$usuario/Downloads/netbeans-8.2-linux.sh
 
 sudo mkdir /opt/NetBeans
 
 sudo chmod 777 /opt/NetBeans* -R
 
-cd /home/matheush/Downloads/
+cd /home/$usuario/Downloads/
 
 sudo chmod +x ./netbeans-8.2-linux.sh
 
@@ -20,4 +22,4 @@ wget https://www.dropbox.com/s/ue5wwe44jeigakl/netbeans.png?dl=0 -O ~/Downloads/
 
 sudo mv netbeans.png /opt/NetBeans/netbeans-8.2/nb/
 
-sudo rm /home/matheush/Downloads/netbeans-8.2-linux.sh
+sudo rm /home/$usuario/Downloads/netbeans-8.2-linux.sh
