@@ -1,8 +1,10 @@
 #!/bin/bash
 
-wget https://dl.pstmn.io/download/latest/linux64 -O /home/matheush/Downloads/Postman.tar.gz
+usuario=$(cat \./\.tmp/\.usuario)
 
-cd /home/matheush/Downloads
+wget https://dl.pstmn.io/download/latest/linux64 -O /home/$usuario/Downloads/Postman.tar.gz
+
+cd /home/$usuario/Downloads
 
 sudo tar xvzf ./Postman.tar.gz -C ./
 
@@ -25,6 +27,6 @@ sudo chmod 644 /usr/share/applications/postman.desktop
  
 wget https://www.dropbox.com/s/q1aycrntwlmv4w8/postman.png?dl=0 -O ~/Downloads/postman.png
  
-sudo mv /home/matheush/Downloads/postman.png /opt/Postman/
+sudo mv /home/$usuario/Downloads/postman.png /opt/Postman/
 
-sudo rm /home/matheush/Downloads/Postman.tar.gz
+sudo rm /home/$usuario/Downloads/Postman.tar.gz
