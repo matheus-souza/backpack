@@ -10,6 +10,6 @@ cd /opt/PhpStorm-171.4249.3/bin/
 
 sudo chmod +x ./phpstorm.sh
 
-sudo ./phpstorm.sh
-
 sudo chmod 777 /opt/PhpStorm-171.4249.3 -R
+
+./phpstorm.sh

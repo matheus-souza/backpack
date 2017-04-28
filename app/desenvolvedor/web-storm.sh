@@ -10,6 +10,6 @@ cd /opt/WebStorm-171.4073.40/bin/
 
 sudo chmod +x ./webstorm.sh
 
-sudo ./webstorm.sh
-
 sudo chmod 777 /opt/WebStorm-171.4073.40 -R
+
+./webstorm.sh
