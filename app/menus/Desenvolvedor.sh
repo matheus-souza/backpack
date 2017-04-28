@@ -104,17 +104,69 @@ EmBranco() {
 }
 
 InstalaTudo() {
+	AdminMongo
+	AndrodStudio
+	Curl
+	Eclipse
+	GitKraken
+	Git
+	JavaJdk
+	MongoDb
+	Netbeans
+	NodeJs
+	Nodemon
+	PhpStorm
+	Postman
+	Pycharm
+	SceneBuilder
+	SublimeText
+	WebStorm
+	Xampp
 }
 
 EscolherProgramas() {
 	checkBox=$(whiptail --title "Backpack" --separate-output --checklist \
 	"Escolha os programas para instalar" 20 78 8 \
+	"AdminMongo" "" OFF \
+	"Android Studio" "" OFF \
+	"Curl" "" OFF \
+	"Eclipse" "" OFF \
+	"GitKraken" "" OFF \
+	"Git" "" OFF \
+	"Java JDK" "" OFF \
+	"MongoDB" "" OFF \
+	"NetBeans" "" OFF \
+	"NodeJS" "" OFF \
+	"Nodemon" "" OFF \
 	"PHP Storm" "IDE para PHP" OFF \
+	"Postman" "" OFF \
+	"PyCharm" "" OFF \
+	"SceneBuilder" "" OFF \
+	"Sublime Text" "" OFF \
+	"WebStorm" "" OFF \
 	"Xampp" "Ambiente de desenvolvimento PHP" OFF 3>&1 1>&2 2>&3)
 
 	echo "$checkBox" | while read item
 	do
 		case $item in
+			"AdminMongo") AdminMongo ;;
+			"Android Studio") AndrodStudio ;;
+			"Curl") Curl ;;
+			"Eclipse") Eclipse ;;
+			"GitKraken") GitKraken ;;
+			"Git") Git ;;
+			"Java JDK") JavaJdk ;;
+			"MongoDB") MongoDb ;;
+			"NetBeans") Netbeans ;;
+			"NodeJS") NodeJs ;;
+			"Nodemon") Nodemon ;;
+			"PHP Storm") PhpStorm ;;
+			"Postman") Postman ;;
+			"PyCharm") Pycharm ;;
+			"SceneBuilder") SceneBuilder ;;
+			"Sublime Text") SublimeText ;;
+			"WebStorm") WebStorm ;;
+			"Xampp") Xampp ;;
 			*) EmBranco ;;
 		esac
 	done
