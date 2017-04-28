@@ -30,3 +30,7 @@ sudo chmod 644 /usr/share/applications/franz.desktop
 wget https://www.dropbox.com/s/bfc4a0x8ebvpiai/franz.png?dl=0 -O /home/$usuario/Downloads/franz.png
  
 sudo mv /home/$usuario/Downloads/franz.png /opt/Franz/
+
+sudo rm /home/$usuario/Downloads/Franz-linux-x64-4.0.4.tgz
+
+sudo rm /home/$usuario/Downloads/franz.png

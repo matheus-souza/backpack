@@ -18,7 +18,7 @@ sudo ./netbeans-8.2-linux.sh
 
 sudo rm /opt/NetBeans/netbeans-8.2/nb/netbeans.png
 
-wget https://www.dropbox.com/s/ue5wwe44jeigakl/netbeans.png?dl=0 -O ~/Downloads/netbeans.png
+wget https://www.dropbox.com/s/ue5wwe44jeigakl/netbeans.png?dl=0 -O /home/$usuario/Downloads/netbeans.png
 
 sudo mv netbeans.png /opt/NetBeans/netbeans-8.2/nb/
 

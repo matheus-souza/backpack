@@ -8,4 +8,4 @@ sudo dpkg -i /home/$usuario/Downloads/scenebuilder-8.3.0.deb
 
 sudo apt -f install -y
 
-sudo rm /home/matheush/Downloads/scenebuilder-8.3.0.deb
+sudo rm /home/$usuario/Downloads/scenebuilder-8.3.0.deb

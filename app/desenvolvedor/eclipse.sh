@@ -26,3 +26,5 @@ sudo echo "Icon=/opt/eclipse/icon.xpm" >> /usr/share/applications/eclipse.deskto
 sudo echo "Categories=Application;Development;Java;IDE" >> /usr/share/applications/eclipse.desktop
  
 sudo chmod 644 /usr/share/applications/eclipse.desktop
+
+sudo rm /home/$usuario/Downloads/eclipse-jee-neon-2-linux-gtk-x86_64.tar.gz
