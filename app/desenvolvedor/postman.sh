@@ -25,7 +25,7 @@ sudo echo "Categories=Application;" >> /usr/share/applications/postman.desktop
  
 sudo chmod 644 /usr/share/applications/postman.desktop
  
-wget https://www.dropbox.com/s/q1aycrntwlmv4w8/postman.png?dl=0 -O ~/Downloads/postman.png
+wget https://www.dropbox.com/s/q1aycrntwlmv4w8/postman.png?dl=0 -O /home/$usuario/Downloads/postman.png
  
 sudo mv /home/$usuario/Downloads/postman.png /opt/Postman/
 

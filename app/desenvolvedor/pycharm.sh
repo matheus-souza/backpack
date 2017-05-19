@@ -6,6 +6,8 @@ wget https://download-cf.jetbrains.com/python/pycharm-professional-2017.1.2.tar.
 
 sudo tar xf /home/$usuario/Downloads/pycharm-professional-2017.1.2.tar.gz -C /opt/
 
+sudo rm /home/$usuario/Downloads/pycharm-professional-2017.1.2.tar.gz
+
 cd /opt/pycharm-2017.1.2/bin/
 
 sudo chmod +x ./pycharm.sh

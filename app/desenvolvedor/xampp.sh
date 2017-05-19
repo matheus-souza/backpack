@@ -33,3 +33,5 @@ sudo echo "Icon=/opt/lampp/bin/xampp.png" >> /usr/share/applications/xampp.deskt
 sudo echo "Categories=Application;Development;Java;IDE" >> /usr/share/applications/xampp.desktop
  
 sudo chmod 644 /usr/share/applications/xampp.desktop
+
+sudo rm /home/$usuario/Downloads/xampp-linux-x64-7.1.1-0-installer.run
