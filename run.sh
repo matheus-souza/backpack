@@ -14,7 +14,6 @@ MenuPrincipal() {
 }
 
 if [[ ! -d "./.tmp" ]]; then
-	echo "criei"
 	mkdir ./.tmp
 
 	touch ./.tmp/.senha
