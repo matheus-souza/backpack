@@ -23,6 +23,10 @@ SimpleScreenRecorder() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/simple-recorder.sh
 }
 
+SafeEyes() {
+	echo -e "$senha\n" | sudo -S ./app/adicionais/safeeyes.sh
+}
+
 Spotify() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/spotify.sh
 }
@@ -55,6 +59,7 @@ InstalaTudo() {
 	GoogleChrome
 	Kdenlive
 	SimpleScreenRecorder
+	SafeEyes
 	Spotify
 	Transmageddon
 }
@@ -66,6 +71,7 @@ EscolherProgramas() {
 	"Google Chrome" "Navegador" OFF \
 	"Kdenlive" "Editor de videos" OFF \
 	"Simple Screen Recorder" "Gravador de tela" OFF \
+	"SafeEyes" "" OFF \
 	"Spotify" "Player de músicas" OFF \
 	"Transmageddon" "Conversor de videos" OFF 3>&1 1>&2 2>&3)
 
@@ -76,6 +82,7 @@ EscolherProgramas() {
 			"Google Chrome") GoogleChrome ;;
 			"Kdenlive") Kdenlive ;;
 			"Simple Screen Recorder") SimpleScreenRecorder ;;
+			"SafeEyes") SafeEyes ;;
 			"Spotify") Spotify ;;
 			"Transmageddon") Transmageddon ;;
 			*) EmBranco ;;
