@@ -60,6 +60,10 @@ PhpStorm() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/php-storm.sh
 }
 
+PgAdmin() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/pgadmin.sh
+}
+
 Postman() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/postman.sh
 }
@@ -116,6 +120,7 @@ InstalaTudo() {
 	NodeJs
 	Nodemon
 	PhpStorm
+	PgAdmin
 	Postman
 	Pycharm
 	SceneBuilder
@@ -139,6 +144,7 @@ EscolherProgramas() {
 	"NodeJS" "" OFF \
 	"Nodemon" "" OFF \
 	"PHP Storm" "IDE para PHP" OFF \
+	"Pg Admin" "" OFF \
 	"Postman" "" OFF \
 	"PyCharm" "" OFF \
 	"SceneBuilder" "" OFF \
@@ -161,6 +167,7 @@ EscolherProgramas() {
 			"NodeJS") NodeJs ;;
 			"Nodemon") Nodemon ;;
 			"PHP Storm") PhpStorm ;;
+			"Pg Admin") PgAdmin ;;
 			"Postman") Postman ;;
 			"PyCharm") Pycharm ;;
 			"SceneBuilder") SceneBuilder ;;
