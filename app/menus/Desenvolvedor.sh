@@ -84,6 +84,13 @@ Xampp() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/xampp.sh
 }
 
+#fazer teste com docker
+VerificaJavaInstalado() {
+	javas=$(javac -version)
+
+	echo $javas
+}
+
 Desenvolvedor() {
 	escolha=$(whiptail --title "Menu Básico" --menu "Pacote Básico" 20 78 7 \
 	"1" "Instalar todos os programas" \
@@ -183,7 +190,10 @@ Detalhes() {
 }
 
 Voltar() {
-	./app/menus/Principal.sh
+	#./app/menus/Principal.sh
+	VerificaJavaInstalado
+	#ver o que acontece quando não tem o jjj instalado
+	
 }
 
 Desenvolvedor
