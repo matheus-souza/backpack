@@ -21,6 +21,10 @@ Curl() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/curl.sh
 }
 
+Docker() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/docker-ce.sh
+}
+
 Eclipse() {
 	#verifica se java ta instalado e chamar java
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/eclipse.sh
@@ -118,6 +122,7 @@ InstalaTudo() {
 	AdminMongo
 	AndrodStudio
 	Curl
+	Docker
 	Eclipse
 	GitKraken
 	Git
@@ -142,6 +147,7 @@ EscolherProgramas() {
 	"AdminMongo" "" OFF \
 	"Android Studio" "" OFF \
 	"Curl" "" OFF \
+	"Docker" "" OFF \
 	"Eclipse" "" OFF \
 	"GitKraken" "" OFF \
 	"Git" "" OFF \
@@ -165,6 +171,7 @@ EscolherProgramas() {
 			"AdminMongo") AdminMongo ;;
 			"Android Studio") AndrodStudio ;;
 			"Curl") Curl ;;
+			"Docker") Docker ;;
 			"Eclipse") Eclipse ;;
 			"GitKraken") GitKraken ;;
 			"Git") Git ;;
