@@ -7,6 +7,10 @@ Concluido() {
 	./app/menus/complementares/Concluido.sh
 }
 
+Dropbox() {
+	echo -e "$senha\n" | sudo -S ./app/adicionais/dropbox.sh
+}
+
 Franz() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/franz.sh
 }
@@ -21,6 +25,10 @@ Kdenlive() {
 
 SimpleScreenRecorder() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/simple-recorder.sh
+}
+
+SafeEyes() {
+	echo -e "$senha\n" | sudo -S ./app/adicionais/safeeyes.sh
 }
 
 Spotify() {
@@ -51,10 +59,12 @@ EmBranco() {
 }
 
 InstalaTudo() {
+	Dropbox
 	Franz
 	GoogleChrome
 	Kdenlive
 	SimpleScreenRecorder
+	SafeEyes
 	Spotify
 	Transmageddon
 }
@@ -62,20 +72,24 @@ InstalaTudo() {
 EscolherProgramas() {
 	checkBox=$(whiptail --title "Backpack" --separate-output --checklist \
 	"Escolha os programas para instalar" 20 78 8 \
+	"Dropbox" "" OFF \
 	"Franz" "Agregador de chats" OFF \
 	"Google Chrome" "Navegador" OFF \
 	"Kdenlive" "Editor de videos" OFF \
 	"Simple Screen Recorder" "Gravador de tela" OFF \
+	"SafeEyes" "" OFF \
 	"Spotify" "Player de músicas" OFF \
 	"Transmageddon" "Conversor de videos" OFF 3>&1 1>&2 2>&3)
 
 	echo "$checkBox" | while read item
 	do
 		case $item in
+			"Dropbox") Dropbox ;;
 			"Franz") Franz ;;
 			"Google Chrome") GoogleChrome ;;
 			"Kdenlive") Kdenlive ;;
 			"Simple Screen Recorder") SimpleScreenRecorder ;;
+			"SafeEyes") SafeEyes ;;
 			"Spotify") Spotify ;;
 			"Transmageddon") Transmageddon ;;
 			*) EmBranco ;;

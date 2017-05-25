@@ -13,6 +13,13 @@ MenuPrincipal() {
 	./app/menus/Principal.sh
 }
 
+if [[ ! -d "./.tmp" ]]; then
+	mkdir ./.tmp
+
+	touch ./.tmp/.senha
+	touch ./.tmp/.usuario
+fi
+
 echo $senha > ./.tmp/.senha
 echo $usuario > ./.tmp/.usuario
 
