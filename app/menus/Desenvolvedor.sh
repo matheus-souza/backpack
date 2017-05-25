@@ -68,6 +68,10 @@ PgAdmin() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/pgadmin.sh
 }
 
+Portainer() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/portainer.sh
+}
+
 Postman() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/postman.sh
 }
@@ -133,6 +137,7 @@ InstalaTudo() {
 	Nodemon
 	PhpStorm
 	PgAdmin
+	Portainer
 	Postman
 	Pycharm
 	SceneBuilder
@@ -158,6 +163,7 @@ EscolherProgramas() {
 	"Nodemon" "" OFF \
 	"PHP Storm" "IDE para PHP" OFF \
 	"Pg Admin" "" OFF \
+	"Portainer" "" OFF \
 	"Postman" "" OFF \
 	"PyCharm" "" OFF \
 	"SceneBuilder" "" OFF \
@@ -182,6 +188,7 @@ EscolherProgramas() {
 			"Nodemon") Nodemon ;;
 			"PHP Storm") PhpStorm ;;
 			"Pg Admin") PgAdmin ;;
+			"Portainer") Portainer ;;
 			"Postman") Postman ;;
 			"PyCharm") Pycharm ;;
 			"SceneBuilder") SceneBuilder ;;
