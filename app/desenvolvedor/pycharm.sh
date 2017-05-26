@@ -14,4 +14,4 @@ sudo chmod +x ./pycharm.sh
 
 sudo chmod 777 /opt/pycharm-2017.1.2 -R
 
-./pycharm.sh
+sudo -H -u $usuario bash -c "./pycharm.sh"
