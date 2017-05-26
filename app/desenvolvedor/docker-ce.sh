@@ -16,6 +16,17 @@ sudo apt-get update
 
 sudo apt-get install docker-ce -y
 
-sudo apt-get install python-pip -y
+InstalacaoTrusty() {
+	sudo apt-get install python-pip -y
+	sudo pip install -U docker-compose
+	sudo chmod +x /usr/local/bin/docker-compose
+}
 
-sudo pip install docker-compose -y
+InstalacaoXenial() {
+	sudo apt-get install docker-compose
+}
+
+case $(lsb_release -cs) in
+	"trusty") InstalacaoTrusty ;;
+	"xenial") InstalacaoXenial ;;
+esac
