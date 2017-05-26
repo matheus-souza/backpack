@@ -43,6 +43,10 @@ JavaJdk() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/java-jdk.sh
 }
 
+Meld() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/meld.sh
+}
+
 MongoDb() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/mongodb.sh
 }
@@ -132,6 +136,7 @@ InstalaTudo() {
 	Git
 	JavaJdk
 	MongoDb
+	Meld
 	Netbeans
 	NodeJs
 	Nodemon
@@ -157,6 +162,7 @@ EscolherProgramas() {
 	"GitKraken" "" OFF \
 	"Git" "" OFF \
 	"Java JDK" "" OFF \
+	"Meld" "" OFF \
 	"MongoDB" "" OFF \
 	"NetBeans" "" OFF \
 	"NodeJS" "" OFF \
@@ -182,6 +188,7 @@ EscolherProgramas() {
 			"GitKraken") GitKraken ;;
 			"Git") Git ;;
 			"Java JDK") JavaJdk ;;
+			"Meld") Meld ;;
 			"MongoDB") MongoDb ;;
 			"NetBeans") Netbeans ;;
 			"NodeJS") NodeJs ;;
