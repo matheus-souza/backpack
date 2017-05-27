@@ -68,6 +68,10 @@ Php70() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/php70.sh
 }
 
+Php71() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/php71.sh
+}
+
 PhpStorm() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/php-storm.sh
 }
@@ -149,6 +153,7 @@ InstalaTudo() {
 	NodeJs
 	Nodemon
 	Php70
+	Php71
 	PhpStorm
 	PgAdmin
 	Portainer
@@ -178,6 +183,7 @@ EscolherProgramas() {
 	"NodeJS" "" OFF \
 	"Nodemon" "" OFF \
 	"Php7.0" "" OFF \
+	"Php7.1" "" OFF \
 	"PHP Storm" "IDE para PHP" OFF \
 	"Pg Admin" "" OFF \
 	"Portainer" "" OFF \
@@ -206,6 +212,7 @@ EscolherProgramas() {
 			"NodeJS") NodeJs ;;
 			"Nodemon") Nodemon ;;
 			"Php7.0") Php70 ;;
+			"Php7.1") Php71 ;;
 			"PHP Storm") PhpStorm ;;
 			"Pg Admin") PgAdmin ;;
 			"Portainer") Portainer ;;
