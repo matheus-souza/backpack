@@ -64,6 +64,10 @@ Nodemon() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/nodemon.sh
 }
 
+Php70() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/php70.sh
+}
+
 PhpStorm() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/php-storm.sh
 }
@@ -144,6 +148,7 @@ InstalaTudo() {
 	Netbeans
 	NodeJs
 	Nodemon
+	Php70
 	PhpStorm
 	PgAdmin
 	Portainer
@@ -172,6 +177,7 @@ EscolherProgramas() {
 	"NetBeans" "" OFF \
 	"NodeJS" "" OFF \
 	"Nodemon" "" OFF \
+	"Php7.0" "" OFF \
 	"PHP Storm" "IDE para PHP" OFF \
 	"Pg Admin" "" OFF \
 	"Portainer" "" OFF \
@@ -199,6 +205,7 @@ EscolherProgramas() {
 			"NetBeans") Netbeans ;;
 			"NodeJS") NodeJs ;;
 			"Nodemon") Nodemon ;;
+			"Php7.0") Php70 ;;
 			"PHP Storm") PhpStorm ;;
 			"Pg Admin") PgAdmin ;;
 			"Portainer") Portainer ;;
