@@ -1,6 +1,6 @@
 #!/bin/bash
 
-usuario=$(cat \./\.tmp/\.usuario)
+usuario=$(cat /\tmp/\authentication/\.usuario)
 
 wget http://ppa.launchpad.net/slgobinath/safeeyes/ubuntu/pool/main/s/safeeyes/safeeyes_1.2.1-1_all.deb -O /home/$usuario/Downloads/safeeyes.deb
 

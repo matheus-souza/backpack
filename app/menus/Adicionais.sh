@@ -1,7 +1,7 @@
 #!/bin/bash
 
-senha=$(cat \./\.tmp/\.senha)
-usuario=$(cat \./\.tmp/\.usuario)
+senha=$(cat /\tmp/\authentication/\.senha)
+usuario=$(cat /\tmp/\authentication/\.usuario)
 
 Concluido() {
 	./app/menus/complementares/Concluido.sh

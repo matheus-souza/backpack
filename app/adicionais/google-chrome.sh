@@ -1,6 +1,6 @@
 #!/bin/bash
 
-usuario=$(cat \./\.tmp/\.usuario)
+usuario=$(cat /\tmp/\authentication/\.usuario)
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O /home/$usuario/Downloads/google-chrome-stable_current_amd64.deb
 

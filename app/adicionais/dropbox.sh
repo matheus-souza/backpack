@@ -1,6 +1,6 @@
 #!/bin/bash
 
-usuario=$(cat \./\.tmp/\.usuario)
+usuario=$(cat /\tmp/\authentication/\.usuario)
 
 wget https://linux.dropbox.com/packages/ubuntu/dropbox_2015.10.28_amd64.deb -O /home/$usuario/Downloads/dropbox_amd64.deb
 
