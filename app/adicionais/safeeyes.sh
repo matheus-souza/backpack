@@ -6,7 +6,7 @@ wget http://ppa.launchpad.net/slgobinath/safeeyes/ubuntu/pool/main/s/safeeyes/sa
 
 sudo dpkg -i /home/$usuario/Downloads/safeeyes.deb
 
-sudo apt -f install -y
+sudo apt-get -f install -y
 
 sudo rm /home/$usuario/Downloads/safeeyes.deb
 

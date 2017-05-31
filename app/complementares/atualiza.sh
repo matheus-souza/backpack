@@ -8,8 +8,8 @@ Concluido() {
 	./app/menus/complementares/Concluido.sh
 }
 
-sudo apt update
-sudo apt upgrade -y
+sudo apt-get update
+sudo apt-get upgrade -y
 
 Concluido
 Principal

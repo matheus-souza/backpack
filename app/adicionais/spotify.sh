@@ -6,6 +6,6 @@ wget http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client
 
 sudo dpkg -i /home/$usuario/Downloads/spotify-client.deb
 
-sudo apt -f install
+sudo apt-get -f install
 
 sudo rm /home/$usuario/Downloads/spotify-client.deb

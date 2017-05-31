@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt install gksu -y
+sudo apt-get install gksu -y

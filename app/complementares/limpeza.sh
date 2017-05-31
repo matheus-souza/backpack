@@ -10,11 +10,11 @@ sudo rm -rf /home/$usuario/.local/share/Trash/files/*
 
 sudo rm -rf /var/tmp/*
 
-sudo apt clean -y
+sudo apt-get clean -y
 
-sudo apt autoremove -y
+sudo apt-get autoremove -y
 
-sudo apt autoclean -y
+sudo apt-get autoclean -y
 
 sudo dpkg --configure -a
 

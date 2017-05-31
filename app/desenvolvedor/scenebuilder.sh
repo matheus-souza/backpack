@@ -6,6 +6,6 @@ wget http://download.gluonhq.com/scenebuilder/8.3.0/install/linux/scenebuilder-8
 
 sudo dpkg -i /home/$usuario/Downloads/scenebuilder-8.3.0.deb
 
-sudo apt -f install -y
+sudo apt-get -f install -y
 
 sudo rm /home/$usuario/Downloads/scenebuilder-8.3.0.deb

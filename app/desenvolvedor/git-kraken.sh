@@ -8,6 +8,6 @@ wget https://release.gitkraken.com/linux/gitkraken-amd64.deb -O /home/$usuario/D
 
 sudo dpkg -i /home/$usuario/Downloads/gitkraken-amd64.deb
 
-sudo apt -f install -y
+sudo apt-get -f install -y
 
 sudo rm /home/$usuario/Downloads/gitkraken-amd64.deb

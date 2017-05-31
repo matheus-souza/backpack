@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt install transmageddon -y
+sudo apt-get install transmageddon -y

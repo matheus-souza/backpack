@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt install gimp -y
+sudo apt-get install gimp -y

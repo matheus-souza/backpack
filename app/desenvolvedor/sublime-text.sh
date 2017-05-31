@@ -6,6 +6,6 @@ wget https://download.sublimetext.com/sublime-text_build-3126_amd64.deb -O /home
 
 sudo dpkg -i /home/$usuario/Downloads/sublime-text_build-3126_amd64.deb
 
-sudo apt -f install -y
+sudo apt-get -f install -y
 
 sudo rm /home/$usuario/Downloads/sublime-text_build-3126_amd64.deb

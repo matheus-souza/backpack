@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt install ubuntu-restricted-extras -y
+sudo apt-get install ubuntu-restricted-extras -y

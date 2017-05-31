@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt install php7.1 -y
+sudo apt-get install php7.1 -y

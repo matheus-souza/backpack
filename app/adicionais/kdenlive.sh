@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt install kdenlive -y
+sudo apt-get install kdenlive -y
