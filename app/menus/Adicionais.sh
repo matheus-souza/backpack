@@ -39,6 +39,10 @@ Transmageddon() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/transmageddon.sh
 }
 
+Virtualbox() {
+	echo -e "$senha\n" | sudo -S ./app/adicionais/virtualbox.sh
+}
+
 Adicionais() {
 	escolha=$(whiptail --title "Menu Adicionais" --menu "Pacote Adicionais" 20 78 7 \
 	"1" "Instalar todos os programas" \
@@ -67,6 +71,7 @@ InstalaTudo() {
 	SafeEyes
 	Spotify
 	Transmageddon
+	Virtualbox
 }
 
 EscolherProgramas() {
@@ -79,7 +84,8 @@ EscolherProgramas() {
 	"Simple Screen Recorder" "Gravador de tela" OFF \
 	"SafeEyes" "" OFF \
 	"Spotify" "Player de músicas" OFF \
-	"Transmageddon" "Conversor de videos" OFF 3>&1 1>&2 2>&3)
+	"Transmageddon" "Conversor de videos" OFF \
+	"VirtualBox" "Virtualizador" OFF 3>&1 1>&2 2>&3)
 
 	echo "$checkBox" | while read item
 	do
@@ -92,6 +98,7 @@ EscolherProgramas() {
 			"SafeEyes") SafeEyes ;;
 			"Spotify") Spotify ;;
 			"Transmageddon") Transmageddon ;;
+			"VirtualBox") Virtualbox ;;
 			*) EmBranco ;;
 		esac
 	done
