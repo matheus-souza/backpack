@@ -1,6 +1,6 @@
 #!/bin/bash
 
-usuario=$(cat \./\.tmp/\.usuario)
+usuario=$(cat /\tmp/\authentication/\.usuario)
 
 wget https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz -O /home/$usuario/Downloads/Franz-linux-x64-4.0.4.tgz
 

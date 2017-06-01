@@ -1,6 +1,6 @@
 #!/bin/bash
 
-usuario=$(cat \./\.tmp/\.usuario)
+usuario=$(cat /\tmp/\authentication/\.usuario)
 
 wget https://dl.pstmn.io/download/latest/linux64 -O /home/$usuario/Downloads/Postman.tar.gz
 

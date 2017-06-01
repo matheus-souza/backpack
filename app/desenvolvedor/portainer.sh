@@ -1,11 +1,11 @@
 #!/bin/bash
 
-usuario=$(cat \./\.tmp/\.usuario)
+usuario=$(cat /\tmp/\authentication/\.usuario)
 
 if [[ ! -d "/home/$usuario/docker/docker-compose.yml" ]]; then
 	mkdir /home/$usuario/docker
 
-	wget https://www.dropbox.com/s/ztbzmovqn45ii3a/portainer_composer.yml?dl=0 -O /home/$usuario/docker/docker-compose.yml
+	wget https://gist.githubusercontent.com/matheus-souza/a888eea8902159f690b53aae2005343b/raw/346ac1bff8e9559c4b84abbaaef4378e2c2a4484/docker-compose.yml -O /home/$usuario/docker/docker-compose.yml
 fi
 
 InstalacaoTrusty() {

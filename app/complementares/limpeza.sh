@@ -1,6 +1,6 @@
 #!/bin/bash
 
-usuario=$(cat \./\.tmp/\.usuario)
+usuario=$(cat /\tmp/\authentication/\.usuario)
 
 MenuConcluidoPrincipal() {
 	./app/menus/complementares/Concluido.sh

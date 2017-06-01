@@ -7,10 +7,10 @@ usuario=0
 #direto=$(pwd)
 #echo $direto
 
-senha=$(cat \./\.tmp/\.senha)
+senha=$(cat /\tmp/\authentication/\.senha)
 #echo $senha
 
-usuario=$(cat \./\.tmp/\.usuario)
+usuario=$(cat /\tmp/\authentication/\.usuario)
 #echo $usuario
 
 MenuAtualizador() {

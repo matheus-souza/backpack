@@ -2,7 +2,7 @@
 
 #CHAMAR GIT INSTALL
 
-usuario=$(cat \./\.tmp/\.usuario)
+usuario=$(cat /\tmp/\authentication/\.usuario)
 
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb -O /home/$usuario/Downloads/gitkraken-amd64.deb
 
