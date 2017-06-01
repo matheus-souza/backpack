@@ -104,6 +104,10 @@ SublimeText() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/sublime-text.sh
 }
 
+Vagrant() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/vagrant.sh
+}
+
 WebStorm() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/web-storm.sh
 }
@@ -162,6 +166,7 @@ InstalaTudo() {
 	Pycharm
 	SceneBuilder
 	SublimeText
+	Vagrant
 	WebStorm
 	Xampp
 }
@@ -192,6 +197,7 @@ EscolherProgramas() {
 	"PyCharm" "" OFF \
 	"SceneBuilder" "" OFF \
 	"Sublime Text" "" OFF \
+	"Vagrant" "" OFF \
 	"WebStorm" "" OFF \
 	"Xampp" "Ambiente de desenvolvimento PHP" OFF 3>&1 1>&2 2>&3)
 
@@ -221,6 +227,7 @@ EscolherProgramas() {
 			"PyCharm") Pycharm ;;
 			"SceneBuilder") SceneBuilder ;;
 			"Sublime Text") SublimeText ;;
+			"Vagrant") Vagrant ;;
 			"WebStorm") WebStorm ;;
 			"Xampp") Xampp ;;
 			*) EmBranco ;;
