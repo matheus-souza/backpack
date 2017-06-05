@@ -23,6 +23,10 @@ Kdenlive() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/kdenlive.sh
 }
 
+PinguyBuilder() {
+	echo -e "$senha\n" | sudo -S ./app/adicionais/pinguybuilder.sh
+}
+
 SimpleScreenRecorder() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/simple-recorder.sh
 }
@@ -67,6 +71,7 @@ InstalaTudo() {
 	Franz
 	GoogleChrome
 	Kdenlive
+	PinguyBuilder
 	SimpleScreenRecorder
 	SafeEyes
 	Spotify
@@ -81,6 +86,7 @@ EscolherProgramas() {
 	"Franz" "Agregador de chats" OFF \
 	"Google Chrome" "Navegador" OFF \
 	"Kdenlive" "Editor de videos" OFF \
+	"PinguyBuilder" "" OFF \
 	"Simple Screen Recorder" "Gravador de tela" OFF \
 	"SafeEyes" "" OFF \
 	"Spotify" "Player de músicas" OFF \
@@ -94,6 +100,7 @@ EscolherProgramas() {
 			"Franz") Franz ;;
 			"Google Chrome") GoogleChrome ;;
 			"Kdenlive") Kdenlive ;;
+			"PinguyBuilder") PinguyBuilder ;;
 			"Simple Screen Recorder") SimpleScreenRecorder ;;
 			"SafeEyes") SafeEyes ;;
 			"Spotify") Spotify ;;
