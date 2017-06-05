@@ -76,6 +76,10 @@ PhpStorm() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/php-storm.sh
 }
 
+PgActivity() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/pg-activity.sh
+}
+
 PgAdmin() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/pgadmin.sh
 }
@@ -159,6 +163,7 @@ InstalaTudo() {
 	Php70
 	Php71
 	PhpStorm
+	PgActivity
 	PgAdmin
 	Portainer
 	Postgresql
@@ -190,7 +195,8 @@ EscolherProgramas() {
 	"Php7.0" "" OFF \
 	"Php7.1" "" OFF \
 	"PHP Storm" "IDE para PHP" OFF \
-	"Pg Admin" "" OFF \
+	"PgActivity" "" OFF \
+	"PgAdmin" "" OFF \
 	"Portainer" "" OFF \
 	"Postgresql" "" OFF \
 	"Postman" "" OFF \
@@ -220,7 +226,8 @@ EscolherProgramas() {
 			"Php7.0") Php70 ;;
 			"Php7.1") Php71 ;;
 			"PHP Storm") PhpStorm ;;
-			"Pg Admin") PgAdmin ;;
+			"PgActivity") PgActivity ;;
+			"PgAdmin") PgAdmin ;;
 			"Portainer") Portainer ;;
 			"Postgresql") Postgresql ;;
 			"Postman") Postman ;;
