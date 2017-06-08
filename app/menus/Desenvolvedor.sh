@@ -8,12 +8,10 @@ Concluido() {
 }
 
 AdminMongo() {
-	#chamar node
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/admin-mongo.sh
 }
 
 AndrodStudio() {
-	#verifica se java ta instalado e chamar java
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/android-studio.sh
 }
 
@@ -26,12 +24,10 @@ Docker() {
 }
 
 Eclipse() {
-	#verifica se java ta instalado e chamar java
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/eclipse.sh
 }
 
 GitKraken() {
-	#Chamar git
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/git-kraken.sh
 }
 
@@ -60,7 +56,6 @@ NodeJs() {
 }
 
 Nodemon() {
-	#verificar se node ta instalado e chamar node
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/nodemon.sh
 }
 
@@ -120,15 +115,7 @@ Xampp() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/xampp.sh
 }
 
-#fazer teste com docker
-VerificaJavaInstalado() {
-	javas=$(javac -version)
-
-	echo $javas
-}
-
 Desenvolvedor() {
-	escolha=$(whiptail --title "Menu Básico" --menu "Pacote Básico" 20 78 7 \
 	escolha=$(whiptail --title "Menu Desenvolvedor" --menu "Pacote Desenvolvedor" 20 78 7 \
 	"1" "Instalar todos os programas" \
 	"2" "Escolher o que instalar" \
@@ -254,10 +241,7 @@ Detalhes() {
 }
 
 Voltar() {
-	#./app/menus/Principal.sh
-	VerificaJavaInstalado
-	#ver o que acontece quando não tem o jjj instalado
-	
+	./app/menus/Principal.sh	
 }
 
 Desenvolvedor
