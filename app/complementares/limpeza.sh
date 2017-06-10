@@ -2,7 +2,11 @@
 
 usuario=$(cat /\tmp/\authentication/\.usuario)
 
-MenuConcluidoPrincipal() {
+Principal() {
+	./app/menus/Principal.sh
+}
+
+Concluido() {
 	./app/menus/complementares/Concluido.sh
 }
 
@@ -18,4 +22,5 @@ sudo apt-get autoclean -y
 
 sudo dpkg --configure -a
 
-MenuConcluidoPrincipal
+Concluido
+Principal
