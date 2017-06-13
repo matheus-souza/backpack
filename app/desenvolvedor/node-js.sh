@@ -6,3 +6,6 @@ sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
 
 sudo apt-get install npm -y
+
+sudo apt-get install nodejs-legacy -y
+
