@@ -15,6 +15,10 @@ Franz() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/franz.sh
 }
 
+Geogebra() {
+	echo -e "$senha\n" | sudo -S ./app/adicionais/geogebra.sh
+}
+
 GoogleChrome() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/google-chrome.sh
 }
@@ -73,6 +77,7 @@ EmBranco() {
 InstalaTudo() {
 	Dropbox
 	Franz
+	Geogebra
 	GoogleChrome
 	Kdenlive
 	MasterPdf
@@ -89,6 +94,7 @@ EscolherProgramas() {
 	"Escolha os programas para instalar" 20 78 8 \
 	"Dropbox" "" OFF \
 	"Franz" "Agregador de chats" OFF \
+	"Geogebra" "" OFF \
 	"Google Chrome" "Navegador" OFF \
 	"Kdenlive" "Editor de videos" OFF \
 	"MasterPdf" "" OFF \
@@ -104,6 +110,7 @@ EscolherProgramas() {
 		case $item in
 			"Dropbox") Dropbox ;;
 			"Franz") Franz ;;
+			"Geogebra") Geogebra ;;
 			"Google Chrome") GoogleChrome ;;
 			"Kdenlive") Kdenlive ;;
 			"MasterPdf") MasterPdf ;;
