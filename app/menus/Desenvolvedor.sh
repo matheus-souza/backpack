@@ -115,6 +115,10 @@ Xampp() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/xampp.sh
 }
 
+Yeoman() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/yeoman.sh
+}
+
 Desenvolvedor() {
 	escolha=$(whiptail --title "Menu Desenvolvedor" --menu "Pacote Desenvolvedor" 20 78 7 \
 	"1" "Instalar todos os programas" \
@@ -162,6 +166,7 @@ InstalaTudo() {
 	Vagrant
 	WebStorm
 	Xampp
+	Yeoman
 }
 
 EscolherProgramas() {
@@ -193,7 +198,8 @@ EscolherProgramas() {
 	"Sublime Text" "" OFF \
 	"Vagrant" "" OFF \
 	"WebStorm" "" OFF \
-	"Xampp" "Ambiente de desenvolvimento PHP" OFF 3>&1 1>&2 2>&3)
+	"Xampp" "Ambiente de desenvolvimento PHP" OFF
+	"Yeoman" "" OFF 3>&1 1>&2 2>&3)
 
 	echo "$checkBox" | while read item
 	do
@@ -225,6 +231,7 @@ EscolherProgramas() {
 			"Vagrant") Vagrant ;;
 			"WebStorm") WebStorm ;;
 			"Xampp") Xampp ;;
+			"Yeoman") Yeoman ;;
 			*) EmBranco ;;
 		esac
 	done
