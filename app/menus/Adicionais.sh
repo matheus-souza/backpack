@@ -23,6 +23,10 @@ Kdenlive() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/kdenlive.sh
 }
 
+MasterPdf() {
+	echo -e "$senha\n" | sudo -S ./app/adicionais/master-pdf.sh
+}
+
 PinguyBuilder() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/pinguybuilder.sh
 }
@@ -71,6 +75,7 @@ InstalaTudo() {
 	Franz
 	GoogleChrome
 	Kdenlive
+	MasterPdf
 	PinguyBuilder
 	SimpleScreenRecorder
 	SafeEyes
@@ -86,6 +91,7 @@ EscolherProgramas() {
 	"Franz" "Agregador de chats" OFF \
 	"Google Chrome" "Navegador" OFF \
 	"Kdenlive" "Editor de videos" OFF \
+	"MasterPdf" "" OFF \
 	"PinguyBuilder" "" OFF \
 	"Simple Screen Recorder" "Gravador de tela" OFF \
 	"SafeEyes" "" OFF \
@@ -100,6 +106,7 @@ EscolherProgramas() {
 			"Franz") Franz ;;
 			"Google Chrome") GoogleChrome ;;
 			"Kdenlive") Kdenlive ;;
+			"MasterPdf") MasterPdf ;;
 			"PinguyBuilder") PinguyBuilder ;;
 			"Simple Screen Recorder") SimpleScreenRecorder ;;
 			"SafeEyes") SafeEyes ;;
