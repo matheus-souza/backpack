@@ -1,6 +1,6 @@
 #!/bin/bash
 
-usuario=$(cat /\tmp/\authentication/\.usuario)
+usuario=$(./app/utils/UsuarioLogado.sh)
 
 wget https://downloadsapachefriends.global.ssl.fastly.net/xampp-files/7.1.1/xampp-linux-x64-7.1.1-0-installer.run?from_af=true -O /home/$usuario/Downloads/xampp-linux-x64-7.1.1-0-installer.run
 

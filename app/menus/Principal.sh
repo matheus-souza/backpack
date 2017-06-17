@@ -7,10 +7,10 @@ usuario=0
 #direto=$(pwd)
 #echo $direto
 
-senha=$(cat /\tmp/\authentication/\.senha)
+senha=$(./app/utils/SenhaUsuarioLogado.sh)
 #echo $senha
 
-usuario=$(cat /\tmp/\authentication/\.usuario)
+usuario=$(./app/utils/UsuarioLogado.sh)
 #echo $usuario
 
 MenuAtualizador() {
@@ -26,7 +26,7 @@ MenuLimpaSistema() {
 }
 
 MenuBasico() {
-	./app/menus/Basico.sh
+	./app/basicos/menu/Principal.sh
 }
 
 MenuDesenvolvedor() {

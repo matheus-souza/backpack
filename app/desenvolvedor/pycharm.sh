@@ -1,6 +1,6 @@
 #!/bin/bash
 
-usuario=$(cat /\tmp/\authentication/\.usuario)
+usuario=$(./app/utils/UsuarioLogado.sh)
 
 wget https://download-cf.jetbrains.com/python/pycharm-professional-2017.1.2.tar.gz -O /home/$usuario/Downloads/pycharm-professional-2017.1.2.tar.gz
 

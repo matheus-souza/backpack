@@ -1,6 +1,6 @@
 #!/bin/bash
 
-usuario=$(cat /\tmp/\authentication/\.usuario)
+usuario=$(./app/utils/UsuarioLogado.sh)
 
 wget https://download-cf.jetbrains.com/webstorm/WebStorm-2017.1.1.tar.gz -O /home/$usuario/Downloads/WebStorm-2017.1.1.tar.gz
 

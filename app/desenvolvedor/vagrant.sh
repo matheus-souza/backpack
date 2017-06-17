@@ -1,6 +1,6 @@
 #!/bin/bash
 
-usuario=$(cat /\tmp/\authentication/\.usuario)
+usuario=$(./app/utils/UsuarioLogado.sh)
 
 wget https://releases.hashicorp.com/vagrant/1.9.5/vagrant_1.9.5_x86_64.deb -O /home/$usuario/Downloads/vagrant_1.9.5_x86_64.deb
 

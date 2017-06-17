@@ -1,6 +1,6 @@
 #!/bin/bash
 
-usuario=$(cat /\tmp/\authentication/\.usuario)
+usuario=$(./app/utils/UsuarioLogado.sh)
 
 if [[ ! -d "/home/$usuario/docker/docker-compose.yml" ]]; then
 	mkdir /home/$usuario/docker

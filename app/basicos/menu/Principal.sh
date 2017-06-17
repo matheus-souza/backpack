@@ -1,7 +1,7 @@
 #!/bin/bash
 
-senha=$(cat /\tmp/\authentication/\.senha)
-usuario=$(cat /\tmp/\authentication/\.usuario)
+senha=$(./app/utils/SenhaUsuarioLogado.sh)
+usuario=$(./app/utils/UsuarioLogado.sh)
 
 Concluido() {
 	./app/menus/complementares/Concluido.sh
@@ -33,15 +33,15 @@ UnityTweakTool() {
 
 Basico() {
 	escolha=$(whiptail --title "Menu Básico" --menu "Pacote Básico" 20 78 7 \
-	"1" "Instalar todos os programas" \
-	"2" "Escolher o que instalar" \
-	"3" "O que contém no pacote" \
+	"1" "O que contém no pacote" \
+	"2" "Instalar todos os programas" \
+	"3" "Escolher o que instalar" \
 	"<-" "Voltar para a tela inicial" 3>&1 1>&2 2>&3)
 		
 	case $escolha in
-		1) InstalaTudo ;;
-		2) EscolherProgramas ;;
-		3) Detalhes ;;
+		1) Detalhes ;;
+		2) InstalaTudo ;;
+		3) EscolherProgramas ;;
 		"<-") Voltar ;;
 	esac
 }
@@ -57,6 +57,8 @@ InstalaTudo() {
 	RarUnrar
 	RestrictedExtras
 	UnityTweakTool
+	Concluido
+	Basico
 }
 
 EscolherProgramas() {
@@ -89,7 +91,7 @@ EscolherProgramas() {
 }
 
 Detalhes() {
-	./app/menus/detalhes/Basico.sh
+	./app/basicos/menu/Detalhes.sh
 	Basico
 }
 

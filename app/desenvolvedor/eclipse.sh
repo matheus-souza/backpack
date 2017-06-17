@@ -2,7 +2,7 @@
 
 #CHAMAR JAVA INSTALL
 
-usuario=$(cat /\tmp/\authentication/\.usuario)
+usuario=$(./app/utils/UsuarioLogado.sh)
 
 wget http://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/neon/2/eclipse-jee-neon-2-linux-gtk-x86_64.tar.gz -O /home/$usuario/Downloads/eclipse-jee-neon-2-linux-gtk-x86_64.tar.gz
 

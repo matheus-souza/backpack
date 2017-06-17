@@ -1,7 +1,7 @@
 #!/bin/bash
 
-senha=$(cat /\tmp/\authentication/\.senha)
-usuario=$(cat /\tmp/\authentication/\.usuario)
+senha=$(./app/utils/SenhaUsuarioLogado.sh)
+usuario=$(./app/utils/UsuarioLogado.sh)
 
 Concluido() {
 	./app/menus/complementares/Concluido.sh

@@ -5,7 +5,7 @@ Detalhes() {
 		Gimp -> Editor de fotos
 		Gksu -> Interface gráfica do sudo
 		Inkscape -> Editor de imagens vetoriais
-		Rar -> Descompactador de arquivos
+		RarUnrar -> Descompactador de arquivos
 		Ubuntu Restricted Extras -> Software essenciais
 		Unity Tweak Tools -> Utilitario de edição do Unity" 14 78
 }

@@ -2,7 +2,7 @@
 
 #CHAMAR JAVA INSTALL
 
-usuario=$(cat /\tmp/\authentication/\.usuario)
+usuario=$(./app/utils/UsuarioLogado.sh)
 
 wget http://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-linux.sh -O /home/$usuario/Downloads/netbeans-8.2-linux.sh
 
