@@ -87,6 +87,8 @@ InstalaTudo() {
 	Spotify
 	Transmageddon
 	Virtualbox
+	Concluido
+	Adicionais
 }
 
 EscolherProgramas() {

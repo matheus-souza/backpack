@@ -167,6 +167,8 @@ InstalaTudo() {
 	WebStorm
 	Xampp
 	Yeoman
+	Concluido
+	Desenvolvedor
 }
 
 EscolherProgramas() {
