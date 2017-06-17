@@ -15,12 +15,20 @@ Franz() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/franz.sh
 }
 
+Geogebra() {
+	echo -e "$senha\n" | sudo -S ./app/adicionais/geogebra.sh
+}
+
 GoogleChrome() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/google-chrome.sh
 }
 
 Kdenlive() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/kdenlive.sh
+}
+
+MasterPdf() {
+	echo -e "$senha\n" | sudo -S ./app/adicionais/master-pdf.sh
 }
 
 PinguyBuilder() {
@@ -69,8 +77,10 @@ EmBranco() {
 InstalaTudo() {
 	Dropbox
 	Franz
+	Geogebra
 	GoogleChrome
 	Kdenlive
+	MasterPdf
 	PinguyBuilder
 	SimpleScreenRecorder
 	SafeEyes
@@ -81,14 +91,16 @@ InstalaTudo() {
 
 EscolherProgramas() {
 	checkBox=$(whiptail --title "Backpack" --separate-output --checklist \
-	"Escolha os programas para instalar" 20 78 8 \
-	"Dropbox" "" OFF \
+	"Escolha os programas para instalar" 20 78 12 \
+	"Dropbox" "Serviço para armazenamento de arquivos" OFF \
 	"Franz" "Agregador de chats" OFF \
+	"Geogebra" "Programa de construção de gráficos" OFF \
 	"Google Chrome" "Navegador" OFF \
 	"Kdenlive" "Editor de videos" OFF \
-	"PinguyBuilder" "" OFF \
+	"MasterPdf" "Editor de PDF" OFF \
+	"PinguyBuilder" "Remasterizador de sistema" OFF \
 	"Simple Screen Recorder" "Gravador de tela" OFF \
-	"SafeEyes" "" OFF \
+	"SafeEyes" "Alerta de descanso dos olhos" OFF \
 	"Spotify" "Player de músicas" OFF \
 	"Transmageddon" "Conversor de videos" OFF \
 	"VirtualBox" "Virtualizador" OFF 3>&1 1>&2 2>&3)
@@ -98,8 +110,10 @@ EscolherProgramas() {
 		case $item in
 			"Dropbox") Dropbox ;;
 			"Franz") Franz ;;
+			"Geogebra") Geogebra ;;
 			"Google Chrome") GoogleChrome ;;
 			"Kdenlive") Kdenlive ;;
+			"MasterPdf") MasterPdf ;;
 			"PinguyBuilder") PinguyBuilder ;;
 			"Simple Screen Recorder") SimpleScreenRecorder ;;
 			"SafeEyes") SafeEyes ;;
