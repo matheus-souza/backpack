@@ -34,7 +34,7 @@ MenuDesenvolvedor() {
 }
 
 MenuAdicionais() {
-	./app/menus/Adicionais.sh
+	./app/adicionais/menu/Principal.sh
 }
 
 
