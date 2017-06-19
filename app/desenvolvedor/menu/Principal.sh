@@ -245,7 +245,7 @@ EscolherProgramas() {
 }
 
 Detalhes() {
-	./app/menus/detalhes/Basico.sh
+	./app/desenvolvedor/menu/Detalhes.sh
 	Desenvolvedor
 }
 
