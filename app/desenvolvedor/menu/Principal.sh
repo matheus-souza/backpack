@@ -121,15 +121,15 @@ Yeoman() {
 
 Desenvolvedor() {
 	escolha=$(whiptail --title "Menu Desenvolvedor" --menu "Pacote Desenvolvedor" 20 78 7 \
-	"1" "Instalar todos os programas" \
-	"2" "Escolher o que instalar" \
-	"3" "O que contém no pacote" \
+	"1" "O que contém no pacote" \
+	"2" "Instalar todos os programas" \
+	"3" "Escolher o que instalar" \
 	"<-" "Voltar para a tela inicial" 3>&1 1>&2 2>&3)
 		
 	case $escolha in
-		1) InstalaTudo ;;
-		2) EscolherProgramas ;;
-		3) Detalhes ;;
+		1) Detalhes ;;
+		2) InstalaTudo ;;
+		3) EscolherProgramas ;;
 		"<-") Voltar ;;
 	esac
 }
@@ -173,35 +173,35 @@ InstalaTudo() {
 
 EscolherProgramas() {
 	checkBox=$(whiptail --title "Backpack" --separate-output --checklist \
-	"Escolha os programas para instalar" 20 78 8 \
-	"AdminMongo" "" OFF \
-	"Android Studio" "" OFF \
-	"Curl" "" OFF \
-	"Docker" "" OFF \
-	"Eclipse" "" OFF \
-	"GitKraken" "" OFF \
-	"Git" "" OFF \
-	"Java JDK" "" OFF \
-	"Meld" "" OFF \
-	"MongoDB" "" OFF \
-	"NetBeans" "" OFF \
-	"NodeJS" "" OFF \
-	"Nodemon" "" OFF \
-	"Php7.0" "" OFF \
-	"Php7.1" "" OFF \
+	"Escolha os programas para instalar" 20 78 13 \
+	"AdminMongo" "Interface Web para MongoDB" OFF \
+	"Android Studio" "IDE para Android" OFF \
+	"Curl" "Ferramenta para criar requisições" OFF \
+	"Docker" "Plataforma de administração de containers" OFF \
+	"Eclipse" "IDE multi-linguagem" OFF \
+	"GitKraken" "Cliente gráfico para Git" OFF \
+	"Git" "Sistema de controle de versão" OFF \
+	"Java JDK" "Pacote de desenvolvimento Java" OFF \
+	"Meld" "Comparador de arquivos" OFF \
+	"MongoDB" "Banco de dados não relacional" OFF \
+	"NetBeans" "IDE multi-linguagem" OFF \
+	"NodeJS" "Plataforma para desenvolvimento de aplicações" OFF \
+	"Nodemon" "File watcher que roda o comando node" OFF \
+	"Php7.0" "Linguagem de programação" OFF \
+	"Php7.1" "Linguagem de programação" OFF \
 	"PHP Storm" "IDE para PHP" OFF \
-	"PgActivity" "" OFF \
-	"PgAdmin" "" OFF \
-	"Portainer" "" OFF \
-	"Postgresql" "" OFF \
-	"Postman" "" OFF \
-	"PyCharm" "" OFF \
-	"SceneBuilder" "" OFF \
-	"Sublime Text" "" OFF \
-	"Vagrant" "" OFF \
-	"WebStorm" "" OFF \
-	"Xampp" "Ambiente de desenvolvimento PHP" OFF
-	"Yeoman" "" OFF 3>&1 1>&2 2>&3)
+	"PgActivity" "Monitorador de servidor PostgreSQL" OFF \
+	"PgAdmin" "Software para administração do PostgreSQL" OFF \
+	"Portainer" "Gerenciador gráfico para Docker" OFF \
+	"Postgresql" "Banco de dados relacional" OFF \
+	"Postman" "Cliente REST" OFF \
+	"PyCharm" "IDE para Python" OFF \
+	"SceneBuilder" "Criador de layout para JavaFX" OFF \
+	"Sublime Text" "Editor de texto e código-fonte" OFF \
+	"Vagrant" "Ferramenta de criação de ambientes virtuais" OFF \
+	"WebStorm" "IDE para tecnologias web" OFF \
+	"Xampp" "Ambiente de desenvolvimento PHP" OFF \
+	"Yeoman" "Stack que automatiza seu build" OFF 3>&1 1>&2 2>&3)
 
 	echo "$checkBox" | while read item
 	do
