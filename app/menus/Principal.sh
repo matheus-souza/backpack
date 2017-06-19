@@ -30,7 +30,7 @@ MenuBasico() {
 }
 
 MenuDesenvolvedor() {
-	./app/menus/Desenvolvedor.sh
+	./app/desenvolvedor/menu/Principal.sh
 }
 
 MenuAdicionais() {
