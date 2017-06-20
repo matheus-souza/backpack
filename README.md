@@ -5,15 +5,22 @@
 
 > Instalador de programas via terminal
 
-## Executando
+## Baixando e executando
+
+### Baixando
 
 Faça o download do arquivo
 ```
 wget -c https://codeload.github.com/matheus-souza/scripts-ubuntu/zip/master?token=AOS6NNcWhXC-0smnxvyBVUjWpuU58nepks5ZSSJ2wA== -O backpack.zip
 ```
+### Executando
 Extraia o arquivo
 ```
 unzip ./backpack.zip
+```
+ou
+```
+gunzip ./backpack.zip
 ```
 Execute o arquivo run.sh
 ```
