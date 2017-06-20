@@ -1,40 +1,24 @@
 # Backpack
 
 [![Build Status](https://travis-ci.com/matheus-souza/scripts-ubuntu.svg?token=pwwRacxRctSe4sFuK9HA&branch=master)](https://travis-ci.com/matheus-souza/scripts-ubuntu)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/matheus-souza/scripts-ubuntu/master/LICENSE?token=AOS6NKNerpMWxI0PMIv098_vLDeDpyEyks5ZUlUbwA%3D%3D)
 
-# Backpack
+> Instalador de programas via terminal
 
-One Paragraph of project description goes here
+## Executando
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
+Faça o download do arquivo
 ```
-Give examples
+wget -c https://codeload.github.com/matheus-souza/scripts-ubuntu/zip/master?token=AOS6NNcWhXC-0smnxvyBVUjWpuU58nepks5ZSSJ2wA== -O backpack.zip
 ```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
+Extraia o arquivo
 ```
-Give the example
+unzip ./backpack.zip
 ```
-
-And repeat
-
+Execute o arquivo run.sh
 ```
-until finished
+./backpack-master/run.sh
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
