@@ -18,6 +18,7 @@ ou [clique aqui]() para o download
 
 ### Executando
 Acesse a pasta onde salvou o arquivo e extraia
+Exemplo:
 ```
 unzip ./backpack.zip
 ```
