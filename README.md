@@ -17,7 +17,7 @@ wget -c https://codeload.github.com/matheus-souza/scripts-ubuntu/zip/master?toke
 ou [clique aqui]() para o download
 
 ### Executando
-Extraia o arquivo
+Acesse a pasta onde salvou o arquivo e extraia
 ```
 unzip ./backpack.zip
 ```
