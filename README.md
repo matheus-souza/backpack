@@ -33,7 +33,7 @@ Execute o arquivo run.sh
 
 ## Contribuindo
 
-Por favor, leia [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) para obter detalhes sobre nosso código de conduta e para enviar suas contribuições.
+Por favor, leia [CONTRIBUTING.md](CONTRIBUTING.md) para obter detalhes sobre nosso código de conduta e para enviar suas contribuições.
 
 ## Versionamento
 
