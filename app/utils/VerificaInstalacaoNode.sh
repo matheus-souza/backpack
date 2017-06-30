@@ -4,7 +4,9 @@ node=$(which node)
 nodejs=$(which nodejs)
 npm=$(which npm)
 
-if [[ -n "$node" && -n "$nodejs" && -n "$npm" ]]; then
+versaoNode=$(nodejs -v)
+
+if [[ -n "$node" && -n "$nodejs" && -n "$npm" && $versaoNode < 6 ]]; then
 	echo true
 else
 	echo false
