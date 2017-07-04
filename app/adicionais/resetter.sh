@@ -6,6 +6,6 @@ wget https://github.com/gaining/Resetter/releases/download/v1.0.0-stable/resette
 
 sudo dpkg -i /home/$usuario/Downloads/resetter.deb
 
-sudo apt-get -f install
+sudo apt-get -f install -y
 
 sudo rm /home/$usuario/Downloads/resetter.deb

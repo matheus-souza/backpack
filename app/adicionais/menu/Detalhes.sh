@@ -14,7 +14,7 @@ Detalhes() {
 		Simple Screen Recorder -> Gravador de tela
 		Spotify -> Player de músicas
 		Transmageddon -> Conversor de videos
-		VirtualBox -> Virtualizador" 18 78
+		VirtualBox -> Virtualizador" 20 78
 }
 
 Detalhes
