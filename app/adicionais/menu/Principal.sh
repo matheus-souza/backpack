@@ -35,6 +35,10 @@ PinguyBuilder() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/pinguybuilder.sh
 }
 
+Resetter() {
+	echo -e "$senha\n" | sudo -S ./app/adicionais/resetter.sh
+}
+
 SimpleScreenRecorder() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/simple-recorder.sh
 }
@@ -82,6 +86,7 @@ InstalaTudo() {
 	Kdenlive
 	MasterPdf
 	PinguyBuilder
+	Resetter
 	SimpleScreenRecorder
 	SafeEyes
 	Spotify
@@ -101,6 +106,7 @@ EscolherProgramas() {
 	"Kdenlive" "Editor de videos" OFF \
 	"MasterPdf" "Editor de PDF" OFF \
 	"PinguyBuilder" "Remasterizador de sistema" OFF \
+	"Resetter" "Programa de reset do sistema" OFF \
 	"Simple Screen Recorder" "Gravador de tela" OFF \
 	"SafeEyes" "Alerta de descanso dos olhos" OFF \
 	"Spotify" "Player de músicas" OFF \
@@ -117,6 +123,7 @@ EscolherProgramas() {
 			"Kdenlive") Kdenlive ;;
 			"MasterPdf") MasterPdf ;;
 			"PinguyBuilder") PinguyBuilder ;;
+			"Resetter") Resetter ;;
 			"Simple Screen Recorder") SimpleScreenRecorder ;;
 			"SafeEyes") SafeEyes ;;
 			"Spotify") Spotify ;;

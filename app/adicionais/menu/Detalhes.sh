@@ -9,6 +9,7 @@ Detalhes() {
 		Kdenlive -> Editor de videos
 		MasterPDF ->  Editor de PDF
 		PinguyBuilder -> Remasterizador de sistema
+		Resetter -> Programa de reset do sistema
 		SafeEyes -> Alerta de descanso dos olhos
 		Simple Screen Recorder -> Gravador de tela
 		Spotify -> Player de músicas
