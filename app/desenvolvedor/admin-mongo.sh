@@ -1,13 +1,43 @@
 #!/bin/bash
 
-#CHAMAR NODEJS INSTALL
+usuario=$(./app/utils/UsuarioLogado.sh)
 
-sudo npm install admin-mongo
+AdminMongo() {
+	cd /home/$usuario
+	
+	sudo npm install admin-mongo
 
-sudo mv node_modules/admin-mongo/ ./adminMongo
+	mkdir /home/$usuario/adminMongo
 
-cd /home/matheush/adminMongo
+	sudo mv node_modules/admin-mongo -R ./adminMongo
+	
+	cd /home/$usuario/adminMongo
 
-sudo apt-get install nodejs-legacy
+	#sudo npm install
 
-sudo npm install
+	#sudo npm upgrade
+}
+
+MongoDb() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/mongodb.sh
+}
+
+NodeJs() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/node-js.sh
+}
+
+nodejs=$(./app/utils/VerificaInstalacaoNode.sh)
+mongodb=$(./app/utils/VerificaInstalacaoMongoDb.sh)
+
+echo $nodejs
+echo $mongodb
+
+if [[ $node != "true" || mongodb != "true" ]]; then
+	MongoDb
+	NodeJs
+	AdminMongo
+else
+	AdminMongo
+fi
+
+
