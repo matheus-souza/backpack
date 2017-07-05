@@ -9,13 +9,11 @@ AdminMongo() {
 
 	mkdir /home/$usuario/adminMongo
 
-	sudo mv node_modules/admin-mongo -R ./adminMongo
+	sudo mv node_modules/admin-mongo/* ./adminMongo
 	
 	cd /home/$usuario/adminMongo
 
-	#sudo npm install
-
-	#sudo npm upgrade
+	sudo npm install
 }
 
 MongoDb() {
