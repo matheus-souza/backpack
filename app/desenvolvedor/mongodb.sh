@@ -21,7 +21,9 @@ sudo apt-get update
 
 sudo apt-get install -y mongodb-org
 
-sudo mkdir /data/db
-sudo mkdir /data
-sudo mkdir /data/db
+if [[ ! -d "/data/db" ]]; then
+	sudo mkdir /data
+	sudo mkdir /data/db
+fi
+
 sudo chmod 777 /data/db -R
