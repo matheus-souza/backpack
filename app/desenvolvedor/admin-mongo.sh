@@ -27,9 +27,6 @@ NodeJs() {
 nodejs=$(./app/utils/VerificaInstalacaoNode.sh)
 mongodb=$(./app/utils/VerificaInstalacaoMongoDb.sh)
 
-echo $nodejs
-echo $mongodb
-
 if [[ $node != "true" || mongodb != "true" ]]; then
 	MongoDb
 	NodeJs
