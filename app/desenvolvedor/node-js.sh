@@ -9,7 +9,7 @@ NodeJs() {
 }
 
 Curl() {
-	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/curl.sh
+	sudo ./app/desenvolvedor/curl.sh
 }
 
 curl=$(./app/utils/VerificaInstalacaoCurl.sh)

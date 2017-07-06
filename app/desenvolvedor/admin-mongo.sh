@@ -17,11 +17,11 @@ AdminMongo() {
 }
 
 MongoDb() {
-	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/mongodb.sh
+	sudo ./app/desenvolvedor/mongodb.sh
 }
 
 NodeJs() {
-	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/node-js.sh
+	sudo ./app/desenvolvedor/node-js.sh
 }
 
 nodejs=$(./app/utils/VerificaInstalacaoNode.sh)

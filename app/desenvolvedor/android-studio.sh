@@ -13,7 +13,7 @@ AndroidStudio() {
 }
 
 JavaJdk() {
-	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/java-jdk.sh
+	sudo ./app/desenvolvedor/java-jdk.sh
 }
 
 jdk=$(./app/utils/VerificaInstalacaoJdk.sh)
