@@ -59,6 +59,10 @@ Nodemon() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/nodemon.sh
 }
 
+OpenJdk() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/open-jdk.sh
+}
+
 Php70() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/php70.sh
 }
@@ -152,6 +156,7 @@ InstalaTudo() {
 	Netbeans
 	NodeJs
 	Nodemon
+	OpenJdk
 	Php70
 	Php71
 	PhpStorm
@@ -187,6 +192,7 @@ EscolherProgramas() {
 	"NetBeans" "IDE multi-linguagem" OFF \
 	"NodeJS" "Plataforma para desenvolvimento de aplicações" OFF \
 	"Nodemon" "File watcher que roda o comando node" OFF \
+	"OpenJdk" "Pacote de desenvolvimento Java" OFF \
 	"Php7.0" "Linguagem de programação" OFF \
 	"Php7.1" "Linguagem de programação" OFF \
 	"PHP Storm" "IDE para PHP" OFF \
@@ -219,6 +225,7 @@ EscolherProgramas() {
 			"NetBeans") Netbeans ;;
 			"NodeJS") NodeJs ;;
 			"Nodemon") Nodemon ;;
+			"OpenJdk") OpenJdk ;;
 			"Php7.0") Php70 ;;
 			"Php7.1") Php71 ;;
 			"PHP Storm") PhpStorm ;;
