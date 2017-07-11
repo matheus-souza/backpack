@@ -15,6 +15,7 @@ Detalhes() {
 		NetBeans -> IDE multi-linguagem
 		NodeJS -> Plataforma para desenvolvimento
 		Nodemon -> File watcher que roda internamente o comando node
+		OpenJdk -> Pacote de desenvolvimento Java
 		PHP7.0 -> Linguagem de programação
 		PHP7.1 -> Linguagem de programação
 		PHP Storm -> IDE para PHP
