@@ -3,7 +3,7 @@
 ## Processo de Pull Request
 
 1. Certifiquese que todas as dependencias da instalção ou correção adicionada estão funcionando corretamente.
-2. Atualize [AVAILABLE_PACKAGES.md](#) com os pacotes adicionados.
+2. Atualize [AVAILABLE_PACKAGES.md](AVAILABLE_PACKAGES.md) com os pacotes adicionados.
 
 ## Code of Conduct
 
