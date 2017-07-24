@@ -6,7 +6,12 @@
 - [Pacote Adicionais](#pacote-adicionais)
 
 #### Pacote Básico
-
+- [Gimp](https://www.gimp.org)
+- [Gksu](www.nongnu.org/gksu)
+- [Inkscape](https://inkscape.org)
+- [RarUnrar](https://packages.ubuntu.com/trusty/unrar-free)
+- [Ubuntu Restricted Extras](https://packages.ubuntu.com/trusty/unrar-free)
+- [Unity Tweak Tools](https://apps.ubuntu.com/cat/applications/unity-tweak-tool)
 
 #### Pacote Desenvolvedor
 
