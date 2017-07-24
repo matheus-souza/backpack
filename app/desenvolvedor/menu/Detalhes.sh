@@ -1,7 +1,7 @@
 #!/bin/bash
 
 Detalhes() {
-	whiptail --title "Detalhes pacote básico" --msgbox "
+	whiptail --title "Detalhes pacote desenvolvedor" --msgbox "
 		AdminMongo ->  Interface Web para MongoDB
 		Android Studio -> IDE para Android
 		Curl -> Ferramenta para criar requisições
