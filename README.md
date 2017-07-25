@@ -37,7 +37,7 @@ Execute o arquivo run.sh
 Por favor, leia [CONTRIBUTING.md](CONTRIBUTING.md) para obter detalhes sobre nosso código de conduta e para enviar suas contribuições.
 
 ### Contribuindo com scripts
-Você pode adicionar um script de instalação para qualquer pacote que ainda não esteja disponível. Toda a ajuda é bem vinda :smile:
+Você pode adicionar um script de instalação para qualquer pacote que ainda não esteja disponível. Toda a ajuda é sempre bem vinda :smile:
 ### Solicitando pacotes
 Caso você não tem o conhecimento ou tempo para contribuir com scripts fique a vontade para abrir uma issue pedindo o pacote que deseja :wink:
 
