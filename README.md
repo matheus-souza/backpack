@@ -10,7 +10,6 @@
 Você pode encontrar a lista completa dos pacotes disponíveis em [AVAILABLE_PACKAGES.md](AVAILABLE_PACKAGES.md)
 
 ### Baixando
-
 Faça o download do arquivo via terminal
 ```
 wget -c https://codeload.github.com/matheus-souza/backpack/zip/master -O ./backpack-master.zip
