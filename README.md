@@ -35,13 +35,17 @@ Execute o arquivo run.sh
 ```
 
 ## Contribuindo
-
 Por favor, leia [CONTRIBUTING.md](CONTRIBUTING.md) para obter detalhes sobre nosso código de conduta e para enviar suas contribuições.
+
+### Contribuindo com scripts
+Você pode adicionar um script de instalação para qualquer pacote que ainda não esteja disponível. Toda a ajuda é bem vinda :smile:
+### Solicitando pacotes
+Caso você não tem o conhecimento para contribuir com scripts fique a vontade para abrir uma issue pedindo o pacote que deseja :wink:
 
 ## Versionamento
 
 Utilizamos o [SemVer](http://semver.org/) para versionamento. Para as versões disponíveis, veja as [tags deste repositório](https://github.com/your/project/tags).
 
-## License
+## Licença
 
 Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes
