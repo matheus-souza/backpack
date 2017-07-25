@@ -1,6 +1,6 @@
 # Backpack
 
-[![Build Status](https://travis-ci.com/matheus-souza/backpack.svg?branch=master)](https://travis-ci.com/matheus-souza/backpack)
+[![Build Status](https://travis-ci.com/matheus-souza/backpack.svg)](https://travis-ci.com/matheus-souza/backpack)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/matheus-souza/scripts-ubuntu/master/LICENSE?token=AOS6NKNerpMWxI0PMIv098_vLDeDpyEyks5ZUlUbwA%3D%3D)
 
 > Instalador de programas via terminal
