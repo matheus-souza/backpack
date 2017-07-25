@@ -6,7 +6,7 @@
 
 ## Baixando e executando
 
-### Pacotes disponíveis
+### Lista de pacotes disponíveis
 Você pode encontrar a lista completa dos pacotes disponíveis em [AVAILABLE_PACKAGES.md](AVAILABLE_PACKAGES.md)
 
 ### Baixando
