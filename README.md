@@ -1,6 +1,6 @@
 # Backpack
 
-[![Build Status](https://travis-ci.com/matheus-souza/backpack.svg?token=pwwRacxRctSe4sFuK9HA&branch=master)](https://travis-ci.com/matheus-souza/backpack)
+[![Build Status](https://travis-ci.com/matheus-souza/backpack.svg?branch=master)](https://travis-ci.com/matheus-souza/backpack)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/matheus-souza/scripts-ubuntu/master/LICENSE?token=AOS6NKNerpMWxI0PMIv098_vLDeDpyEyks5ZUlUbwA%3D%3D)
 
 > Instalador de programas via terminal
@@ -14,20 +14,20 @@ Você pode encontrar a lista completa dos pacotes disponíveis em [AVAILABLE_PAC
 
 Faça o download do arquivo via terminal
 ```
-wget -c https://codeload.github.com/matheus-souza/scripts-ubuntu/zip/master?token=AOS6NNcWhXC-0smnxvyBVUjWpuU58nepks5ZSSJ2wA== -O backpack.zip
+wget -c https://codeload.github.com/matheus-souza/backpack/zip/master -O ./backpack-master.zip
 ```
 
-ou [clique aqui]() para o download
+ou [clique aqui](https://codeload.github.com/matheus-souza/backpack/zip/master) para o download
 
 ### Executando
 Acesse a pasta onde salvou o arquivo e extraia
 Exemplo:
 ```
-unzip ./backpack.zip
+unzip ./backpack-master.zip
 ```
 ou
 ```
-gunzip ./backpack.zip
+gunzip ./backpack-master.zip
 ```
 Execute o arquivo run.sh
 ```
@@ -40,7 +40,7 @@ Por favor, leia [CONTRIBUTING.md](CONTRIBUTING.md) para obter detalhes sobre nos
 ### Contribuindo com scripts
 Você pode adicionar um script de instalação para qualquer pacote que ainda não esteja disponível. Toda a ajuda é bem vinda :smile:
 ### Solicitando pacotes
-Caso você não tem o conhecimento para contribuir com scripts fique a vontade para abrir uma issue pedindo o pacote que deseja :wink:
+Caso você não tem o conhecimento ou tempo para contribuir com scripts fique a vontade para abrir uma issue pedindo o pacote que deseja :wink:
 
 ## Versionamento
 
