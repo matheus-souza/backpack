@@ -44,7 +44,7 @@ Caso você não tem o conhecimento ou tempo para contribuir com scripts fique a 
 
 ## Versionamento
 
-Utilizamos o [SemVer](http://semver.org/) para versionamento. Para as versões disponíveis, veja as [tags deste repositório](https://github.com/your/project/tags).
+Utilizamos o [SemVer](http://semver.org/) para versionamento. Para as versões disponíveis, veja as [tags deste repositório](https://github.com/matheus-souza/backpack/tags).
 
 ## Licença
 
