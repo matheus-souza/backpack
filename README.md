@@ -47,6 +47,3 @@ Utilizamos o [SemVer](http://semver.org/) para versionamento. Para as versões d
 ## Licença
 
 Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes
-
-
-Teste
