@@ -1,5 +1,5 @@
 # Backpack
-[![Build Status](https://travis-ci.com/matheus-souza/backpack.svg?token=Wyj2gvbtt674ZKqVzNHU&branch=master)](https://travis-ci.com/matheus-souza/backpack)
+[![Build Status](https://travis-ci.org/matheus-souza/backpack.svg?branch=master)](https://travis-ci.org/matheus-souza/backpack)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/matheus-souza/scripts-ubuntu/master/LICENSE?token=AOS6NKNerpMWxI0PMIv098_vLDeDpyEyks5ZUlUbwA%3D%3D)
 
 > :school_satchel: Instalador de programas via terminal
