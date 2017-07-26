@@ -3,11 +3,4 @@ rvm: 2.2
 before_script: gem install awesome_bot
 script: awesome_bot app/**/*.sh --allow-ssl --allow-redirect --allow-dupe
 notifications:
-  email:
-    recipients:
-      - mh.matheussouza@gmail.com
-    on_success: change
-    on_failure: always
-branches:
-  only: 
-    - master
+  email: false
