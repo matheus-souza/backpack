@@ -31,6 +31,8 @@
 - [PHP7.0](https://php.net)
 - [PHP7.1](https://php.net)
 - [PHP Storm](https://www.jetbrains.com/phpstorm)
+- [Python3](https://www.python.org)
+- [Pip Python 3](https://pypi.python.org/pypi/pip)
 - [PgActivity](https://github.com/julmon/pg_activity)
 - [PgAdmin](https://www.pgadmin.org)
 - [Portainer](https://github.com/portainer/portainer)

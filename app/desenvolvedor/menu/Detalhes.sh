@@ -19,6 +19,8 @@ Detalhes() {
 		PHP7.0 -> Linguagem de programação
 		PHP7.1 -> Linguagem de programação
 		PHP Storm -> IDE para PHP
+		Python3 -> Linguagem de programação Python versão 3.x
+		Pip Python3 -> Gerenciador de pacotes do Python 3
 		PgActivity -> Monitorador de servidor PostgreSQL
 		PgAdmin -> Software gráfico para administração do PostgreSQL
 		Portainer -> Gerenciador gráfico para Docker
