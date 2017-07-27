@@ -42,6 +42,7 @@
 - [SceneBuilder](http://gluonhq.com/products/scene-builder)
 - [Sublime Text](https://www.sublimetext.com)
 - [Vagrant](https://www.vagrantup.com)
+- [Visual Studio Code](https://code.visualstudio.com)
 - [WebStorm](https://www.jetbrains.com/webstorm)
 - [Xampp](https://www.apachefriends.org/pt_br/index.html)
 - [Yeoman](http://yeoman.io)
