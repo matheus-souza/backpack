@@ -75,6 +75,14 @@ PhpStorm() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/php-storm.sh
 }
 
+Python3() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/python3.sh
+}
+
+PipPython3() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/pip-python3.sh
+}
+
 PgActivity() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/pg-activity.sh
 }
@@ -123,6 +131,7 @@ Yeoman() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/yeoman.sh
 }
 
+
 Desenvolvedor() {
 	escolha=$(whiptail --title "Menu Desenvolvedor" --menu "Pacote Desenvolvedor" 20 78 7 \
 	"1" "O que contém no pacote" \
@@ -160,6 +169,8 @@ InstalaTudo() {
 	Php70
 	Php71
 	PhpStorm
+	Python3
+	PipPython3
 	PgActivity
 	PgAdmin
 	Portainer
@@ -196,6 +207,8 @@ EscolherProgramas() {
 	"Php7.0" "Linguagem de programação" OFF \
 	"Php7.1" "Linguagem de programação" OFF \
 	"PHP Storm" "IDE para PHP" OFF \
+	"Python3" "Linguagem de programação Python versão 3.x" OFF \
+	"Pip Python3" "Gerenciador de pacotes do Python 3" OFF \
 	"PgActivity" "Monitorador de servidor PostgreSQL" OFF \
 	"PgAdmin" "Software para administração do PostgreSQL" OFF \
 	"Portainer" "Gerenciador gráfico para Docker" OFF \
@@ -207,7 +220,7 @@ EscolherProgramas() {
 	"Vagrant" "Ferramenta de criação de ambientes virtuais" OFF \
 	"WebStorm" "IDE para tecnologias web" OFF \
 	"Xampp" "Ambiente de desenvolvimento PHP" OFF \
-	"Yeoman" "Stack que automatiza seu build" OFF 3>&1 1>&2 2>&3)
+	"Yeoman" "Stack que automatiza seu build" OFF 3>&1 1>&2 2>&3 )
 
 	echo "$checkBox" | while read item
 	do
@@ -229,6 +242,8 @@ EscolherProgramas() {
 			"Php7.0") Php70 ;;
 			"Php7.1") Php71 ;;
 			"PHP Storm") PhpStorm ;;
+			"Python3") Python3 ;;
+			"Pip Python3") PipPython3 ;;
 			"PgActivity") PgActivity ;;
 			"PgAdmin") PgAdmin ;;
 			"Portainer") Portainer ;;
