@@ -119,6 +119,10 @@ Vagrant() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/vagrant.sh
 }
 
+VSCode(){
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/vscode.sh
+}
+
 WebStorm() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/web-storm.sh
 }
@@ -180,6 +184,7 @@ InstalaTudo() {
 	SceneBuilder
 	SublimeText
 	Vagrant
+	VSCode
 	WebStorm
 	Xampp
 	Yeoman
@@ -218,6 +223,7 @@ EscolherProgramas() {
 	"SceneBuilder" "Criador de layout para JavaFX" OFF \
 	"Sublime Text" "Editor de texto e código-fonte" OFF \
 	"Vagrant" "Ferramenta de criação de ambientes virtuais" OFF \
+	"Visual Studio Code" "Editor de texto da Microsoft" OFF \
 	"WebStorm" "IDE para tecnologias web" OFF \
 	"Xampp" "Ambiente de desenvolvimento PHP" OFF \
 	"Yeoman" "Stack que automatiza seu build" OFF 3>&1 1>&2 2>&3 )
@@ -253,6 +259,7 @@ EscolherProgramas() {
 			"SceneBuilder") SceneBuilder ;;
 			"Sublime Text") SublimeText ;;
 			"Vagrant") Vagrant ;;
+			"Visual Studio Code") VSCode ;;
 			"WebStorm") WebStorm ;;
 			"Xampp") Xampp ;;
 			"Yeoman") Yeoman ;;

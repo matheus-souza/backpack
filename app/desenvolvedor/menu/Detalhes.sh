@@ -30,6 +30,7 @@ Detalhes() {
 		SceneBuilder -> Criador de layout para JavaFX
 		Sublime Text -> Editor de texto e código-fonte
 		Vagrant -> Ferramenta de criação de ambientes virtuais
+		Visual Studio Code -> Editor de texto da Microsoft
 		WebStorm -> IDE para tecnologias web
 		Xampp -> Ambiente de desenvolvimento PHP
 		Yeoman -> Stack que automatiza seu build" 36 78
