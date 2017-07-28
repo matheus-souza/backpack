@@ -2,7 +2,6 @@
 
 pcarch=$(uname -m)
 gpacman=$(sudo pacman -h)
-gaptget=$(sudo apt-get -h)
 user=$(./app/utils/UsuarioLogado.sh)
 
 if [[ $gpacman ]]; then
