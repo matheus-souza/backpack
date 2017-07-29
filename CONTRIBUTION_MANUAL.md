@@ -89,7 +89,7 @@ Gimp() {
 }
 [...]
 ```
-Obs.: Cuidar para manter a ordem alfabética
+Cuidar para manter a ordem alfabética
 
 ### Adicionar chamada da função na InstalaTudo
 ---
@@ -108,7 +108,7 @@ InstalaTudo() {
 	Basico
 }
 ```
-Obs.: Cuidar para manter a ordem alfabética
+Cuidar para manter a ordem alfabética
 
 ### Adicionar chamada da função na EscolherProgramas
 ---
@@ -123,7 +123,7 @@ Para que o programa apareça na lista para ser selecionado e assim instalado pre
 "Gksu" "Interface gráfica do sudo" OFF \
 [...]
 ```
-Obs.: Cuidar para manter a ordem alfabética
+Cuidar para manter a ordem alfabética
 #### Adicionar o pacote dentro das escolhas
 Agora para que a seleção funcione você precisa adicionar na lista de baixo
 
@@ -135,7 +135,7 @@ Agora para que a seleção funcione você precisa adicionar na lista de baixo
 [...]
 ```
 O que fica dentro das aspas precisa se identico ao que você adicionou na lista anterio. Se o título utilizado na lista anterior foi *Gimp* precisa escrever exatamente deste jeito dentro das aspas.
-Obs.: Cuidar para manter a ordem alfabética
+Cuidar para manter a ordem alfabética
 
 ### Adicionar no Detalhes do pacote
 ---
