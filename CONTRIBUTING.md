@@ -1,11 +1,13 @@
 # Contribuindo
 
+Se deseja contribuir com código, mas tem duvidas de como produzir seu script acesse [CONTRIBUTION_MANUAL.md](CONTRIBUTION_MANUAL.md)
+
 ## Processo de Pull Request
 
 1. Certifiquese que todas as dependencias da instalção ou correção adicionada estão funcionando corretamente.
 2. Atualize [AVAILABLE_PACKAGES.md](AVAILABLE_PACKAGES.md) com os pacotes adicionados.
 
-## Code of Conduct
+## Código de conduta
 
 ### Nosso Compromisso
 

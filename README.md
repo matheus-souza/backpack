@@ -35,6 +35,7 @@ Execute o arquivo run.sh
 ```
 
 ## Contribuindo
+Se deseja contribuir com código, mas tem duvidas de como produzir seu script acesse [CONTRIBUTION_MANUAL.md](CONTRIBUTION_MANUAL.md).
 Por favor, leia [CONTRIBUTING.md](CONTRIBUTING.md) para obter detalhes sobre nosso código de conduta e para enviar suas contribuições.
 
 ### Contribuindo com scripts
