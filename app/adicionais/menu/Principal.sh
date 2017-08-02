@@ -23,6 +23,10 @@ GoogleChrome() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/google-chrome.sh
 }
 
+Ireport() {
+	echo -e "$senha\n" | sudo -S ./app/adicionais/ireport-413.sh
+}
+
 Kdenlive() {
 	echo -e "$senha\n" | sudo -S ./app/adicionais/kdenlive.sh
 }
@@ -83,6 +87,7 @@ InstalaTudo() {
 	Franz
 	Geogebra
 	GoogleChrome
+	Ireport
 	Kdenlive
 	MasterPdf
 	PinguyBuilder
@@ -103,6 +108,7 @@ EscolherProgramas() {
 	"Franz" "Agregador de chats" OFF \
 	"Geogebra" "Programa de construção de gráficos" OFF \
 	"Google Chrome" "Navegador" OFF \
+	"IReport" "Gerador de relatórios" OFF \
 	"Kdenlive" "Editor de videos" OFF \
 	"MasterPdf" "Editor de PDF" OFF \
 	"PinguyBuilder" "Remasterizador de sistema" OFF \
@@ -120,6 +126,7 @@ EscolherProgramas() {
 			"Franz") Franz ;;
 			"Geogebra") Geogebra ;;
 			"Google Chrome") GoogleChrome ;;
+			"IReport") Ireport ;;
 			"Kdenlive") Kdenlive ;;
 			"MasterPdf") MasterPdf ;;
 			"PinguyBuilder") PinguyBuilder ;;
