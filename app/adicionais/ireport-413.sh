@@ -6,7 +6,7 @@ wget https://ufpr.dl.sourceforge.net/project/ireport/iReport/iReport-4.1.3/iRepo
 
 cd /home/$usuario/Downloads
 
-sudo tar xvzf ./iReport-4.1.3.tar.gz -C
+sudo tar xvzf ./iReport-4.1.3.tar.gz
 
 sudo echo "jdkhome=/usr/lib/jvm/java-1.7.0-openjdk-amd64" >> ./iReport-4.1.3/etc/ireport.conf
 
