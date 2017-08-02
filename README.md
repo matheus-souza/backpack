@@ -6,10 +6,21 @@
 
 > :school_satchel: Instalador de programas via terminal
 
-## Baixando e executando
+**Sumário**
+- [Lista de pacotes disponíveis](#lista-de-pacotes-disponíveis)
+- [Baixando e executando](#baixando-e-executando)
+    - [Baixando](#baixando)
+    - [Executando](#executando)
+- [Contribuindo](#contribuindo)
+    - [Contribuindo com scripts](#contribuindo-com-scripts)
+    - [Solicitando pacotes](#solicitando-pacotes)
+- [Versionamento](#versionamento)
+- [Licença](#licença)
 
-### Lista de pacotes disponíveis
+## Lista de pacotes disponíveis
 Você pode encontrar a lista completa dos pacotes disponíveis em [AVAILABLE_PACKAGES.md](AVAILABLE_PACKAGES.md)
+
+## Baixando e executando
 
 ### Baixando
 Faça o download do arquivo via terminal
