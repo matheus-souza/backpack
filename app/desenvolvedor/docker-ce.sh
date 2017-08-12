@@ -3,7 +3,7 @@
 usuario=$(./app/utils/UsuarioLogado.sh)
 
 Docker() {
-	sudo apt-get remove docker docker-engine -y
+	sudo apt-get remove docker docker-engine docker.io -y
 
 	sudo apt-get update
 
@@ -39,6 +39,14 @@ Docker() {
 		"trusty") InstalacaoTrusty ;;
 		"xenial") InstalacaoXenial ;;
 	esac
+
+	sudo addgroup --system docker
+
+	sudo adduser $USER docker
+
+	newgrp docker
+
+	sudo service docker restart
 }
 
 Curl() {
