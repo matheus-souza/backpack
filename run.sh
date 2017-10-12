@@ -26,5 +26,5 @@ if [[ "$usuario" != "" && "$senha" != "" && $validacaoLogin == "true" ]]; then
 	MenuPrincipal
 else
 	whiptail --title "Erro!" --msgbox "Houve um problema ao autenticar o usuário" 8 60
-	exit 0
+	exit 1
 fi
