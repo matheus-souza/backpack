@@ -8,6 +8,8 @@ cd /home/$usuario/Downloads
 
 sudo tar xvzf ./Postman.tar.gz -C ./
 
+sudo rm /opt/Postman* -R
+
 sudo mv ./Postman /opt/
 
 sudo touch /usr/share/applications/postman.desktop
