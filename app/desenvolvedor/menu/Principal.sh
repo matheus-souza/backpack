@@ -19,6 +19,10 @@ Curl() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/curl.sh
 }
 
+Dbeaver() {
+	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/dbeaver.sh
+}
+
 Docker() {
 	echo -e "$senha\n" | sudo -S ./app/desenvolvedor/docker-ce.sh
 }
@@ -159,6 +163,7 @@ InstalaTudo() {
 	AdminMongo
 	AndrodStudio
 	Curl
+	Dbeaver
 	Docker
 	Eclipse
 	GitKraken
@@ -198,6 +203,7 @@ EscolherProgramas() {
 	"AdminMongo" "Interface Web para MongoDB" OFF \
 	"Android Studio" "IDE para Android" OFF \
 	"Curl" "Ferramenta para criar requisições" OFF \
+	"Dbeaver" "Ferramenta GUI para multi-platform database" OFF \
 	"Docker" "Plataforma de administração de containers" OFF \
 	"Eclipse" "IDE multi-linguagem" OFF \
 	"GitKraken" "Cliente gráfico para Git" OFF \
@@ -234,6 +240,7 @@ EscolherProgramas() {
 			"AdminMongo") AdminMongo ;;
 			"Android Studio") AndrodStudio ;;
 			"Curl") Curl ;;
+			"Dbeaver") Dbeaver ;;
 			"Docker") Docker ;;
 			"Eclipse") Eclipse ;;
 			"GitKraken") GitKraken ;;
