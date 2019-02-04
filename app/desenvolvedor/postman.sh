@@ -22,13 +22,9 @@ sudo echo "Type=Application" >> /usr/share/applications/postman.desktop
 sudo echo "Terminal=false" >> /usr/share/applications/postman.desktop
 sudo echo "Name=Postman" >> /usr/share/applications/postman.desktop
 sudo echo "Exec=/opt/Postman/Postman" >> /usr/share/applications/postman.desktop
-sudo echo "Icon=/opt/Postman/postman.png" >> /usr/share/applications/postman.desktop
+sudo echo "Icon=/opt/Postman/app/resources/app/assets/icon.png" >> /usr/share/applications/postman.desktop
 sudo echo "Categories=Application;" >> /usr/share/applications/postman.desktop
  
 sudo chmod 644 /usr/share/applications/postman.desktop
- 
-wget https://www.dropbox.com/s/q1aycrntwlmv4w8/postman.png?dl=0 -O /home/$usuario/Downloads/postman.png
- 
-sudo mv /home/$usuario/Downloads/postman.png /opt/Postman/
 
 sudo rm /home/$usuario/Downloads/Postman.tar.gz
